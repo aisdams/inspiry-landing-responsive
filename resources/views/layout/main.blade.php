@@ -130,10 +130,10 @@
 
     <header class="v-header container-fluid">
         <div class="header-overlay">
+            <div class="header-h6">
+                <h6> Management is doing the things right,</br>People is doing the right things. </h6>
+            </div>
             <div class="header-content">
-                <div class="header-h6">
-                    <h6> Management is doing the things right,</br>People is doing the right things. </h6>
-                </div>
                 <div class="header-content-title">
                     <h2> 
                         <img src="{{ asset('btn-red.png') }}" alt="" class="red-dot">

@@ -151,7 +151,7 @@ nav.sticky .search input::-webkit-input-placeholder {
 
 
 .v-header {
-    height: 120vh;
+    height: 110vh;
     display: flex;
     align-items: center;
     color: #fff;
@@ -169,7 +169,7 @@ nav.sticky .search input::-webkit-input-placeholder {
 }
 
 .header-content{
-    margin-top: 30vh;
+    margin-top: 12vh;
 }
 .header-h6{
     justify-content: flex-end;
@@ -178,12 +178,14 @@ nav.sticky .search input::-webkit-input-placeholder {
     letter-spacing: 1px;
     font-size: 15px;
     text-shadow: 4px 4px 7px rgba(0, 0, 0, 0.733);
+    margin-top: 27vh;
+    text-align: right;
 }
+
 
 .header-content-title{
-    margin-top: 12vh;
+    text-align: center;
 }
-
 .header-content .red-dot{
     width: 40px;
     margin-top: -10vh;
@@ -193,12 +195,12 @@ nav.sticky .search input::-webkit-input-placeholder {
     font-size:32px;
     font-weight:700;
     text-shadow: 4px 4px 7px rgba(0, 0, 0, 0.733);
-    position: relative;
+    /* position: relative; */
 }
 .header-content h4{
     letter-spacing: 6px;
     font-size:17px;
-    position: relative;
+    /* position: relative; */
 }
 .header-content {
     z-index: 2;
@@ -216,18 +218,18 @@ nav.sticky .search input::-webkit-input-placeholder {
 }
 
 .header-content-logo{
-    margin-top: 3vh;
+    margin-top: 7vh;
 }
 .logo-1{
     position: relative;
     display: flex;
-    gap: .5vw;
     align-items: center;
+    justify-content: center;
+    gap: .5vw;
     margin-top: 2vh;
 }
-.logo-col-1{
-    width: 7.5%;
-    height: 7.5%;
+.logo-1 .logo-col-1{
+    width: 6%;
     position: relative;
 }
 .logo-1 p{
