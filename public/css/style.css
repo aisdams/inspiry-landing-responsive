@@ -6,6 +6,9 @@
     scroll-behavior: smooth;
     cursor: default;
 }
+html,body {
+    overflow-x: visible;
+}
 /* Before animation*/
 [data-aos="my-animation"] {
     transform: rotate(0) scale(0.6);
@@ -15,8 +18,9 @@
 /* After animation */
 [data-aos="my-animation"].aos-animate {
     transform: rotate(360deg) scale(1);
-    opacity: 1;
+    opacity: 1; 
 }
+
 /* Preload */
 .preloader {
     position: fixed;
@@ -147,49 +151,58 @@ nav.sticky .search input::-webkit-input-placeholder {
 
 
 .v-header {
-    height: 100vh;
+    height: 120vh;
     display: flex;
     align-items: center;
     color: #fff;
-}
-
-.container {
-    max-width: 960px;
-    padding-left: 1rem;
-    padding-right: 1rem;
-    margin: auto;
-    text-align: center;
-}
-
-.video-header {
-    position: absolute;
-    top: 0;
-    left: 0;
-    width: 100%;
-    height: 110vh;
-    overflow: hidden;
-}
-
-.video-header img {
-    min-height: 100%;
-    min-width: 100%;
+    background-image: url("/img/town.jpg");
+    background-repeat: no-repeat;
+    background-size: cover;
+    padding: 0 !important;
 }
 
 .header-overlay {
-    height: 110vh;
-    position: absolute;
-    top: 0;
-    left: 0;
     width: 100%;
-    z-index: 1;
-    background: #000000;
-    opacity: .7;
+    height: 100%;
+    background: rgba(0, 0, 0, 0.651);
+    background-size: cover;
 }
 
+.header-content{
+    margin-top: 30vh;
+}
+.header-h6{
+    justify-content: flex-end;
+    margin-right: 3vw;
+    display: flex;
+    letter-spacing: 1px;
+    font-size: 15px;
+    text-shadow: 4px 4px 7px rgba(0, 0, 0, 0.733);
+}
+
+.header-content-title{
+    margin-top: 12vh;
+}
+
+.header-content .red-dot{
+    width: 40px;
+    margin-top: -10vh;
+}
+.header-content h2{
+    letter-spacing: 5px;
+    font-size:32px;
+    font-weight:700;
+    text-shadow: 4px 4px 7px rgba(0, 0, 0, 0.733);
+    position: relative;
+}
+.header-content h4{
+    letter-spacing: 6px;
+    font-size:17px;
+    position: relative;
+}
 .header-content {
     z-index: 2;
 }
-
 .header-content h1 {
     font-size: 100px;
     margin-bottom: 0;
@@ -199,7 +212,41 @@ nav.sticky .search input::-webkit-input-placeholder {
 .header-content p {
     font-size: 1.5rem;
     display: block;
-    padding-bottom: 2rem;
+    margin-bottom: 0;
+}
+
+.header-content-logo{
+    margin-top: 3vh;
+}
+.logo-1{
+    position: relative;
+    display: flex;
+    gap: .5vw;
+    align-items: center;
+    margin-top: 2vh;
+}
+.logo-col-1{
+    width: 7.5%;
+    height: 7.5%;
+    position: relative;
+}
+.logo-1 p{
+    font-size:15px;
+    font-weight:600;
+}
+
+.circlenyaya{
+    display: flex;
+    gap: .4rem;
+    justify-content: center;
+    margin-top: 5vh;
+    /* position: relative; */
+}
+.circlenyaya .circle-1{
+    width:6px;
+    height:6px;
+    border-radius:30px;
+    background:white
 }
 /* !! End Header */
 
@@ -231,12 +278,14 @@ nav.sticky .search input::-webkit-input-placeholder {
 .gallery-card-top{
     margin-top: 7vh;
     display: flex;
-    justify-content: space-around;
+    gap: 5vw;
+    justify-content: center;
 }
 .gallery-card-bottom{
     margin-top: 28vh;
     display: flex;
-    justify-content: space-around;
+    gap: 5vw;
+    justify-content: center;
 }
 .gallery-img img{
 width: 40vh;
@@ -579,7 +628,7 @@ width: 40vh;
 }
 
 .column-line {
-    width: 380px;
+    width: 100%;
     height: 6px;
     background:#FF0000;
     margin-top: 5rem;
@@ -800,3 +849,7 @@ object-fit: cover;
     position: absolute;
 } */
 /* !! End whatsapp logo */
+
+@media screen and (min-device-width: 1200px) and (max-device-width: 1600px) and (-webkit-min-device-pixel-ratio: 1){
+
+}

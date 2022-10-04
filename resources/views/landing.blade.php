@@ -80,11 +80,11 @@
 <div class="container-fluid container-about-us text-end fw-bold" style="margin-top: 7vh; height:150vh;">
     <h1 data-aos="zoom-in" data-aos-duration="1000" style="font-size: 45px;letter-spacing: 8px;color:red;text-shadow: 2px 1px #ff0000da; font-weight:600; text-shadow:1px 1px 2px black">ABOUT</h1>
     <h1 data-aos="zoom-in" data-aos-duration="1000" style="font-size: 50px;letter-spacing: 8px;text-shadow: 2px 1px #2c2c2cda; font-weight:600; text-shadow:1px 1px 2px black">US</h1>
-    <div data-aos="zoom-in" data-aos-duration="1000" class="circlenyaya position-relative mt-4" style="display: flex;gap: .6rem;float:right; margin-right:1rem">
+    {{-- <div data-aos="zoom-in" data-aos-duration="1000" class="circlenyaya position-relative mt-4" style="display: flex;gap: .6rem;float:right; margin-right:1rem">
         <div class="circle-1" style="width:6px; height:6px;border-radius:30px;background:rgb(0, 0, 0)"></div>
         <div class="circle-1" style="width:6px; height:6px;border-radius:30px;background:rgb(0, 0, 0)"></div>
         <div class="circle-1" style="width:6px; height:6px;border-radius:30px;background:rgb(0, 0, 0)"></div>
-    </div>
+    </div> --}}
 
     <div class="imgleft" style="position: relative;top:-7rem; right:2rem">
         <img src="{{ asset('circle-pink.png') }}" alt="" width="800px" data-aos="fade-down">
@@ -327,7 +327,7 @@
             </div>
 
             <div class="content-solution d-flex" style="gap: 4rem;">
-                <div class="text-sulution-1 mt-5 text-white" style="font-size: 17px;" data-aos="fade-up" data-aos-duration="1500" data-aos-delay="500">
+                <div class="text-solution-1 mt-5 text-white" style="font-size: 17px;" data-aos="fade-up" data-aos-duration="1500" data-aos-delay="500">
                     <p style="letter-spacing: .1px;">INSPIRY is here to help entrepreneurs, business owners, and company leaders to maximize all business management</p><p style="margin-top: -1rem"> performance, design and map out the right business strategy, and ultimately be able to improve the company’s financial </p> <p style="margin-top: -1rem;letter-spacing: .9px;">on an ongoing basis. We provide you with all the answers, and strategies and solutions that can bring your </p> <p style="margin-top: -1rem"> company and business to grow faster and better, and are fully scalable and controllable.</p>
 
                     <p>With the increase in the company’s internal competence and the ability to manage all company resources accompanied by </p> <p style="letter-spacing: .2px; margin-top: -1rem">and speed in responding to the company’s external conditions. Our clients are able to take their company and business</p><p style="margin-top: -1rem">to a level that is more advanced than its previous position and excel in business competition. Client companies also have a</p><p style="margin-top: -1rem">series of solutions and strategies, especially dealing with recession, crisis and decline successfully</p>
@@ -342,32 +342,44 @@
             </div>
         
 
-        <div class="our-client text-white d-flex text-center" style="width: 83rem;background:rgba(0, 0, 0, 0.5);height:300px;margin-left: -3rem;margin-top:5rem">
-            <div class="column" style="width: 380px;height:220px;background:rgba(255, 255, 255, 0.137);margin-left: 4.5rem;margin-top:2rem">
-            <div class="textnya" style="margin-top:4rem">
-                <h1 id='0101'>150</h1><h2 style="position: relative;top:-4rem; font-size:36px;left:2.9rem">+</h2>
-                <p style="position:relative; top: -3rem">OUR CLIENT</p>
-            <div class="column-line" style="position: relative; top:-3.2rem">
-            </div>
-            </div>
-        </div>
+        <div class="our-client text-white text-center" style="display: flex; gap:2rem ;justify-content: center;align-items: center;width: 100%;background:rgba(0, 0, 0, 0.5);height:50vh;margin-left: -3rem;margin-top:5rem">
+            {{-- <div class="column" style="width: 33%;height:220px;background:rgba(255, 255, 255, 0.137);margin-left: 4.5rem;margin-top:2rem">
+                <div class="textnya" style="margin-top:4rem">
+                    <h1 id='0101'>150</h1><h2 style="position: relative;top:-4rem; font-size:36px;left:2.9rem">+</h2>
+                    <p style="position:relative; top: -3rem">OUR CLIENT</p>
+                </div>
+                <div class="column-line" style="position: relative; top:-3.2rem"></div>
+            </div> --}}
 
-        <div class="column" style="width: 380px;height:220px;background:rgba(255, 255, 255, 0.137);margin-left: 1.4rem;margin-top:2rem">
-            <div class="textnya" style="margin-top:4rem">
-                <h1 id='0102'>6</h1>
-                <p>PARTNERSHIP</p>
-            <div class="column-line"></div>
+            <div class="column" style="width: 30%;height:220px;background:rgba(255, 255, 255, 0.137);margin-left: margin-top:2rem">
+                <div class="textnya" style="margin-top:4rem">
+                    <h1 id='0101'>150</h1>
+                    <p>OUR CLIENT</p>
+                </div>
+                <div class="column-line"></div>
             </div>
-        </div>
-
-        <div class="column" style="width: 380px;height:220px;background:rgba(255, 255, 255, 0.137);margin-left: 1.4rem;margin-top:2rem">
-            <div class="textnya" style="margin-top:4rem">
-                <h1 id='0103'>20 +</h1><h2 style="position: relative;top:-4rem; font-size:36px;left:2.9rem">+</h2>
-                <p style="position:relative; top: -3rem">RECOMMENDATION LETTER</p>
+            <div class="column" style="width: 30%;height:220px;background:rgba(255, 255, 255, 0.137);margin-left: margin-top:2rem">
+                <div class="textnya" style="margin-top:4rem">
+                    <h1 id='0102'>6</h1>
+                    <p>PARTNERSHIP</p>
+                </div>
+                <div class="column-line"></div>
             </div>
-            <div class="column-line" style="position: relative; top:-3.2rem">
+            <div class="column" style="width: 30%;height:220px;background:rgba(255, 255, 255, 0.137);margin-left: margin-top:2rem">
+                <div class="textnya" style="margin-top:4rem">
+                    <h1 id='0103'>20</h1>
+                    <p>RECOMMENDATION LETTER</p>
+                </div>
+                <div class="column-line"></div>
             </div>
-        </div>
+    
+            {{-- <div class="column" style="width: 33%;height:220px;background:rgba(255, 255, 255, 0.137);margin-left: margin-top:2rem">
+                <div class="textnya" style="margin-top:4rem">
+                    <h1 id='0103'>20 +</h1><h2 style="position: relative;top:-4rem; font-size:36px;left:2.9rem">+</h2>
+                    <p style="position:relative; top: -3rem">RECOMMENDATION LETTER</p>
+                </div>
+                <div class="column-line" style="position: relative; top:-3.2rem"></div>
+            </div> --}}
         </div>
     </div>
 </div>

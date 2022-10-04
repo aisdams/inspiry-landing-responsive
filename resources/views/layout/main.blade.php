@@ -3,7 +3,7 @@
 <head>
     <!-- Required meta tags -->
     <meta charset="utf-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
 
     <!-- My style -->
     <link rel="stylesheet" href="css/style.css">
@@ -31,9 +31,7 @@
 
     <link
     rel="stylesheet"
-    href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css"
-  />
-  
+    href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css">
 
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper/swiper-bundle.min.css"/>
     <!-- Bootstrap CSS -->
@@ -48,7 +46,7 @@
     <title>Landing</title>
 </head>
 <body onload="load()">
-    <div class="preloader">
+    <div class="container-fluid preloader">
         <div class="loading">
             <img src="img/black.gif" width="230">
         </div>
@@ -60,7 +58,7 @@
         </a>
     </div>
 
-    <nav class="navbar navbar-expand-lg navbar-dark" id="navbar">
+    <nav class="container-fluid navbar navbar-expand" id="navbar">
         <div class="container-fluid">
             <a class="navbar-brand" href="#">
                 <img src="img/logo.png" alt="" width="30" height="24" class="navbar-brand-img">
@@ -130,54 +128,36 @@
         </div>
     </nav>
 
-    <header class="v-header container">
-        <div class="video-header">
-            <img src="{{ asset('town.jpg') }}" alt="">
-        </div>
-
+    <header class="v-header container-fluid">
         <div class="header-overlay">
-            <h6 class="text-white text-end mt-5" style="z-index: 3; letter-spacing: 1px;position: relative;top:7rem;font-size:15px; float: right;right: 13rem; text-shadow: 4px 4px 7px rgba(0, 0, 0, 0.733);">
-            Management is doing the things right,</br>People is doing the right things.
-            </h6>
-        </div>
-        <div class="header-content mt-5">
-            <img src="{{ asset('btn-red.png') }}" alt="" width="40px" style="position: relative; right: 8rem;top: 12rem;">
-            <h2 style="letter-spacing: 5px;font-size:32px;font-weight:700;margin-top:12rem;left:13.5rem; text-shadow: 4px 4px 7px rgba(0, 0, 0, 0.733);" class="position-relative">PT. INSPIRY INDONESIA KONSULTAN</h2>
-            <h4 style="letter-spacing: 6px;font-size:17px;left:13.5rem" class="position-relative">YOUR TRUSTED PARTNER</h4>
-            {{-- logo 1 --}}
-            <div class="logo-1 position-relative" style="left: 15rem">
-            <div class="row">
-                <div class="col">
-                    <img src="{{ asset('gaslogo.png') }}" alt="" style="position: relative;left:8rem">
+            <div class="header-content">
+                <div class="header-h6">
+                    <h6> Management is doing the things right,</br>People is doing the right things. </h6>
                 </div>
-                <div class="col">
-                    <p style="font-size:15px;font-weight:600;" class="text-start mt-3">GAKESLAB MEMBERS
-                        </br>
-                        No. 921/GAKESLAB/JABAR
-                    </p>
+                <div class="header-content-title">
+                    <h2> 
+                        <img src="{{ asset('btn-red.png') }}" alt="" class="red-dot">
+                        PT. INSPIRY INDONESIA KONSULTAN</h2>
+                    <h4>YOUR TRUSTED PARTNER</h4>
                 </div>
-            </div>
-        </div>
-
-        {{-- logo 2 --}}
-        <div class="logo-1 position-relative" style="left: 15rem;margin-top:-2rem;">
-            <div class="row">
-            <div class="col">
-                <img src="{{ asset('isologo.png') }}" alt="" style="position: relative;left:8rem">
-            </div>
-            <div class="col">
-                <p style="font-size:15px;font-weight:600;" class="text-start mt-3">ISO 9001-2015
-                    </br>
-                    CERTIFIED
-                </p>
-            </div>
-            </div>
-        </div>
-
-        <div class="circlenyaya position-relative" style="display: flex;gap: .4rem;left:35rem">
-            <div class="circle-1" style="width:6px; height:6px;border-radius:30px;background:white"></div>
-            <div class="circle-1" style="width:6px; height:6px;border-radius:30px;background:white"></div>
-            <div class="circle-1" style="width:6px; height:6px;border-radius:30px;background:white"></div>
+                <div class="header-content-logo">
+                    {{-- logo 1 --}}
+                    <div class="logo-1">
+                        <img class="logo-col-1" src="{{ asset('gaslogo.png') }}" alt="">
+                        <p>GAKESLAB MEMBERS</br>No. 921/GAKESLAB/JABAR</p>
+                    </div>
+                    {{-- logo 2 --}}
+                    <div class="logo-1">
+                        <img class="logo-col-1" src="{{ asset('isologo.png') }}" alt="">
+                        <p>ISO 9001-2015</br>CERTIFIED</p>
+                    </div>
+                </div>
+                <div class="circlenyaya">
+                    <div class="circle-1"></div>
+                    <div class="circle-1"></div>
+                    <div class="circle-1"></div>
+                    </div>
+                </div>
             </div>
         </div>
     </header>
@@ -201,7 +181,7 @@
     {{-- AOS animated --}}
     <script>
         function animate(obj, initVal, lastVal, duration) {
-           let startTime = null;
+            let startTime = null;
   
         //get the current timestamp and assign it to the currentTime variable
         let currentTime = Date.now();
@@ -234,10 +214,11 @@
         let text2 = document.getElementById('0102');
         let text3 = document.getElementById('0103');
         const load = () => {
-           animate(text1, 0, 150, 20000);
-           animate(text2, 0, 6, 20000);
-           animate(text3, 0, 20, 20000);
+            animate(text1, 0, 150, 20000);
+            animate(text2, 0, 6, 20000);
+            animate(text3, 0, 20, 20000);
         }
+
      </script>
     <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
     <script>
@@ -250,13 +231,13 @@
         AOS.init();
     </script>
     <script type="text/javascript">
-       var prevScrollpos = window.pageYOffset;
+        var prevScrollpos = window.pageYOffset;
         window.onscroll = function() {
         var currentScrollPos = window.pageYOffset;
         if (prevScrollpos > currentScrollPos) {
             document.getElementById("navbar").style.top = "0";
         } else {
-            document.getElementById("navbar").style.top = "-170px";
+            document.getElementById("navbar").style.top = "-30vh";
         }
         prevScrollpos = currentScrollPos;
         }
