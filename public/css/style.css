@@ -73,6 +73,12 @@ nav{
     margin-left: 1vw;
 }
 
+.navbar-toggler-icon {
+}
+.navbar-toggler {
+    background-color: #fff !important;
+}
+
 .navbar-item{
     display: flex;
     width: 67%;
@@ -275,7 +281,7 @@ nav.sticky .search input::-webkit-input-placeholder {
     padding-right: 1vw;
 }
 .gallery-card{
-    width: 20%;
+    min-width: 20%;
 }
 .gallery-card-top{
     margin-top: 7vh;
@@ -313,6 +319,45 @@ width: 100%;
       }
   }
 /* !! End Gallery */
+
+/* !! about us */
+.circlepink{
+    max-width: 800px;
+    left: -3vw;
+}
+.circlered{
+    position: relative;
+    top: -40rem;
+    left: -7vw;
+}
+.logo-about{
+    position: relative;
+    top: -63rem;
+    left: -11vw;
+}
+.container-about-us{
+    display: flex;
+    margin-top: 7vh;
+    height: 130vh;
+}
+.container-about-us .content-textnya{
+    float: right;
+    margin-top: -2vh;
+}
+.imgleft{
+    width: 45%;
+}
+.about-us-content{
+    min-width: 55%;
+}
+
+.about-us-text{
+    margin-top: 10vh;
+    margin-right: .5rem;
+    position: relative;
+    text-align: justify;
+}
+/* !! end about us */
 
 
 /* !! Container Handshake */
@@ -367,7 +412,8 @@ width: 100%;
 /* !! Container Our-team */
 .container-our-team{
     background-color: rgb(145, 143, 143);
-    height: 115vh;
+    min-height: 110vh;
+    padding: 0 !important;
 }
 .our-team-title{
     display: flex;
@@ -381,13 +427,18 @@ width: 100%;
     position: relative;
     font-size: 55px;
     text-shadow:1px 3px 3px rgba(0, 0, 0, 0.534);
-    margin-top: -13vh;
+    margin-top: 5%;
 }
 .our-team-img{
     margin-top: 25vh;
+    min-width: 87%;
     display: flex;
-    justify-content: space-between;
-    width: 87%;
+    margin-left: auto;
+    margin-right: auto;
+}
+.img-team{
+    max-width: 210px;
+    display: flex;
     margin-left: auto;
     margin-right: auto;
 }
@@ -577,6 +628,12 @@ width: 100%;
 /* !! End Product */
 
 /* Start Solution */
+.all-solution{
+    padding-left: 3.5rem;
+    width: 90%;
+    margin-left: auto;
+    margin-right: auto;
+}
 
 .container-solution{
     padding: 0 !important;
@@ -852,6 +909,197 @@ object-fit: cover;
 } */
 /* !! End whatsapp logo */
 
-@media screen and (min-device-width: 1200px) and (max-device-width: 1600px) and (-webkit-min-device-pixel-ratio: 1){
+@media screen and (min-device-width: 1200px) and (max-device-width: 1440px) and (-webkit-min-device-pixel-ratio: 1){
+    .gallery-card:nth-child(4) img{
+        height: 170px !important;
+    }
 
+    .our-team-img{
+        justify-content: center;
+        gap: 2rem;
+    }
+
+    .circlepink{
+        position:relative;
+        left: -10vw;
+    }
+    .circlered{
+        left: -9vw;
+    }
+    .logo-about{
+        left: -15vw;
+    }
 }
+
+
+@media only screen and (min-device-width: 1024px) and (max-device-width: 1199px) and (-webkit-min-device-pixel-ratio: 1){
+    .navbar-brand-img{
+        display: none;
+    }
+
+    .gallery-card-container{
+        height: 220vh;
+    }
+    .gallery-card-top{
+        flex-wrap: wrap;
+        display: flex;
+        gap: 7vw;
+    }
+    .gallery-card-bottom{
+        flex-wrap: wrap;
+        display: flex;
+        gap: 7vw;
+    }
+    .gallery-card {
+        max-width: 45%;
+    }
+    .gallery-img img {
+        width: 100%;
+    }
+    .gallery-content h6{
+        font-size: 24px;
+    }
+
+
+    .container-our-team{
+        min-height: 85vh;
+    }
+    .our-team-img {
+        width: 100%;
+        display: flex;
+        gap: .2rem;
+        padding: 0 1rem 0 1rem;
+    }
+
+    .culture-card-container{
+        width: 90%;
+        gap: 1rem;
+    }
+    .culture-card{
+        height: 35vw;
+        width: 30vw;
+    }
+    .culture-card:nth-child(1), .culture-card:nth-child(3) {
+        height: 37vw;
+        width: 30vw;
+    }
+    .culture-card-img{
+        width: 100%;
+        height: 60%;
+    }
+    .culture-img1 {
+        width: 10vw;
+    }
+    .culture-card-content h3 {
+        font-size: 2.7vw;
+        margin-top: 0.5vh;
+    }
+    .culture-card-content p {
+        margin-top: -2vh;
+        font-size: 1.6vw;
+    }
+
+
+    .culture-title h3 {
+        font-size: 3vw;
+    }
+    .product {
+        margin-top:-3rem;
+    }
+    .product-title h3{
+        font-size: 3.7vw;
+    }
+    .container-solution{
+        margin-top: 120rem;
+    }
+    .product-top{
+        margin-top: 14rem;
+    }
+    .product-card {
+        width: 100%;
+        box-shadow: 0 0 10px rgba(0, 0, 0, 0.473);
+    }
+    .product-card-container{
+        display: grid;
+        width: 100%;
+        padding: 0;
+        min-height: 140vh;
+        grid-template-columns: 450px 450px;
+        gap: 15px;
+    }
+    .product-card-img img{
+        width: 450px;
+    }
+    .product-card-content h6 {
+        font-size: 1.5vw;
+    }
+    .img-team{
+        max-width: 165px;
+        display: flex;
+        margin-left: auto;
+        margin-right: auto;
+    }
+    /* .our-team-img .img-1,.img-5{
+        margin: 0;
+    }
+    .our-team-img .img-2,.img-4{
+        margin: 0;
+    }
+    .our-team-img .img-3{
+        margin: 0;
+    } */
+
+    .container-about-us{
+        max-height: 115vh;
+    }
+    .imgleft{
+        display: none;
+        width: 0;
+    }
+    .about-us-content{
+        width: 90%;
+        margin-left: auto;
+        margin-right: auto;
+    }
+    .about-us-text{
+        width: 80%;
+        margin-left: auto;
+        margin-right: auto;
+    }
+
+    .our-partner-img{
+        gap: 1rem !important;
+    }
+    .our-partner-logo .inline{
+        margin-top: 2vh;
+        margin-left: auto;
+        margin-right: auto;
+    }
+
+    .whatsapp-logo{
+        display: none;
+        width: 0;
+    }
+}
+
+@media only screen and (min-device-width: 768px) 
+  and (max-device-width: 1023px) 
+  and (-webkit-min-device-pixel-ratio: 1) {
+    .navbar-brand-img {
+        display: none;
+    }
+
+    .imgleft img{
+        display: none;
+    }
+    .content-textnya {
+        position:relative;
+        top: 0;
+    }
+    .our-team-img {
+        display: block;
+        width: 100%;
+    }
+    
+}
+

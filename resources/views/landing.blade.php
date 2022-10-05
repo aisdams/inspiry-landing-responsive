@@ -1,6 +1,7 @@
 @extends('layout.main')
 
 @section('content')
+<section id="gallery">
 <div class="container-fluid container-gallery">   
     <div class="gallery-title">
         <h1>GALLERY</h1>
@@ -76,49 +77,46 @@
         </div>
     </div>
 </div>
+</section>
 
-<div class="container-fluid container-about-us text-end fw-bold" style="margin-top: 7vh; height:150vh;">
-    <h1 data-aos="zoom-in" data-aos-duration="1000" style="font-size: 45px;letter-spacing: 8px;color:red;text-shadow: 2px 1px #ff0000da; font-weight:600; text-shadow:1px 1px 2px black">ABOUT</h1>
-    <h1 data-aos="zoom-in" data-aos-duration="1000" style="font-size: 50px;letter-spacing: 8px;text-shadow: 2px 1px #2c2c2cda; font-weight:600; text-shadow:1px 1px 2px black">US</h1>
-    {{-- <div data-aos="zoom-in" data-aos-duration="1000" class="circlenyaya position-relative mt-4" style="display: flex;gap: .6rem;float:right; margin-right:1rem">
-        <div class="circle-1" style="width:6px; height:6px;border-radius:30px;background:rgb(0, 0, 0)"></div>
-        <div class="circle-1" style="width:6px; height:6px;border-radius:30px;background:rgb(0, 0, 0)"></div>
-        <div class="circle-1" style="width:6px; height:6px;border-radius:30px;background:rgb(0, 0, 0)"></div>
-    </div> --}}
+<section id="about">
 
-    <div class="imgleft" style="position: relative;top:-7rem; right:2rem">
-        <img src="{{ asset('circle-pink.png') }}" alt="" width="800px" data-aos="fade-down">
-        <img src="{{ asset('circle-red.png') }}" alt="" style="position:relative;right:40rem">
-        <img src="img/logo.png" alt="" width="300px" class="logo-about"data-aos="my-animation" data-aos-duration="2000" id="reload" style="position: relative;top:-34rem;right: 48rem">
+<div class="container-fluid container-about-us text-end fw-bold">
+
+    <div class="imgleft" >
+        <img src="{{ asset('circle-pink.png') }}" alt="" width="800px" data-aos="fade-down" class="circlepink">
+        <img src="{{ asset('circle-red.png') }}" alt="" class="circlered">
+        <img src="img/logo.png" alt="" width="300px" class="logo-about" data-aos="my-animation" data-aos-duration="2000" id="reload">
     </div>
 
-    <div class="text-right text-start position-relative" style="float: right;top:-64rem;" data-aos="zoom-in" data-aos-duration="1000">
-        <p style=" letter-spacing: .3px;font-weight:400;font-size:18px">INSPIRY INDONESIA CONSULTANT Founded in September 2019 is one of the consulting </br> </p>
-        <p style="font-weight:400;font-size:18px;margin-top:-1rem">companies that is present in order to improve the competitiveness of the company which </br></p>
-        <p style=" letter-spacing: -.3px;font-weight:400;font-size:18px;margin-top:-1rem">concentrates on productive management, good company quality standards and a strong work</br></p><p style="font-weight:400;font-size:18px;margin-top:-1rem">team.</p> 
+    <div class="about-us-content">
+        <div class="about-us-title">
+            <h1 data-aos="zoom-in" data-aos-duration="1000" style="font-size: 45px;letter-spacing: 8px;color:red;text-shadow: 2px 1px #ff0000da; font-weight:600; text-shadow:1px 1px 2px black">ABOUT</h1>
+            <h1 data-aos="zoom-in" data-aos-duration="1000" style="font-size: 50px;letter-spacing: 8px;text-shadow: 2px 1px #2c2c2cda; font-weight:600; text-shadow:1px 1px 2px black">US</h1>
+            <div data-aos="zoom-in" data-aos-duration="1000" class="circlenyaya position-relative mt-4" style="display: flex;gap: .6rem;float:right; margin-right:1rem">
+                <div class="circle-1" style="width:6px; height:6px;border-radius:30px;background:rgb(0, 0, 0)"></div>
+                <div class="circle-1" style="width:6px; height:6px;border-radius:30px;background:rgb(0, 0, 0)"></div>
+                <div class="circle-1" style="width:6px; height:6px;border-radius:30px;background:rgb(0, 0, 0)"></div>
+            </div> 
+        </div>
 
-        <p style=" letter-spacing: -.3px;font-weight:400;font-size:18px">In productive management, the scope of the collaboration includes current condition analysis,</br> </p>
-        <p style=" letter-spacing: -.2px;font-weight:400;font-size:18px;margin-top:-1rem">company grand design, business implementation plan, and breakthroughs needed in order to</br></p>
-        <p style=" letter-spacing: -.3px;font-weight:400;font-size:18px;margin-top:-1rem">accelerate the achievement of targets in the work plan. This is a guideline so that the company</br></p>
-        <p style=" letter-spacing: -.1px;font-weight:400;font-size:18px;margin-top:-1rem">runs according to what has been agreed by all shareholders, is easy to control, and can adapt</br></p>
-        <p style="font-weight:400;font-size:18px;margin-top:-1rem">quickly.</p> 
-
-        <p style=" letter-spacing: -.3px;font-weight:400;font-size:18px">The quality of the company’s standards is important in future competition so that the company’s</br> </p>
-        <p style=" letter-spacing: -.2px;font-weight:400;font-size:18px;margin-top:-1rem">position in the market is more credible, competent and classy.</br></p>
-
-        <p style=" letter-spacing: -.3px;font-weight:400;font-size:18px">We also have training modules that vary greatly according to the demands of the times and the</br> </p>
-        <p style=" letter-spacing: .3px;font-weight:400;font-size:18px;margin-top:-1rem">company, which are expected to improve the performance of the work team as a whole,</br></p>
-        <p style=" letter-spacing: .2px;font-weight:400;font-size:18px;margin-top:-1rem">standardized and sustainable. This can also support the creation of a productive climate in</br></p>
-        <p style=" letter-spacing: -.1px;font-weight:400;font-size:18px;margin-top:-1rem">creating future leaders within the company.</br></p>
-
-        <p style=" letter-spacing: -.1px;font-weight:400;font-size:18px">Part of our success stems from our motto “Your Trusted Partner”. This motto has become the</br> </p>
-        <p style=" letter-spacing: -.2px;font-weight:400;font-size:18px;margin-top:-1rem">DNA in our daily life where we always strive to provide the best service and are responsible for</br></p>
-        <p style=" letter-spacing: -.5px;font-weight:400;font-size:18px;margin-top:-1rem">all our customers. Customer satisfaction is very important to us which is why we are committed to</br></p>
-        <p style=" letter-spacing: -.3px;font-weight:400;font-size:18px;margin-top:-1rem">always pushing our customer service standards and providing the right solution for your business</br></p>
-        <p style=" letter-spacing: -.1px;font-weight:400;font-size:18px;margin-top:-1rem">needs.</br></p>
+        <div class="about-us-text " data-aos="zoom-in" data-aos-duration="1000">
+            <p style=" letter-spacing: .3px;font-weight:400;font-size:18px">INSPIRY INDONESIA CONSULTANT Founded in September 2019 is one of the consulting  companies that is present in order to improve the competitiveness of the company which  concentrates on productive management, good company quality standards and a strong work team.</p>
+    
+            <p style=" letter-spacing: -.3px;font-weight:400;font-size:18px">In productive management, the scope of the collaboration includes current condition analysis, company grand design, business implementation plan, and breakthroughs needed in order to accelerate the achievement of targets in the work plan. This is a guideline so that the companyruns according to what has been agreed by all shareholders, is easy to control, and can adaptquickly.</p>
+    
+            <p style=" letter-spacing: -.3px;font-weight:400;font-size:18px">The quality of the company’s standards is important in future competition so that the company’s position in the market is more credible, competent and classy.</p>
+    
+            <p style=" letter-spacing: -.3px;font-weight:400;font-size:18px">We also have training modules that vary greatly according to the demands of the times and the company, which are expected to improve the performance of the work team as a whole, standardized and sustainable. This can also support the creation of a productive climate in creating future leaders within the company.</p>
+    
+            <p style=" letter-spacing: -.1px;font-weight:400;font-size:18px">Part of our success stems from our motto “Your Trusted Partner”. This motto has become the DNA in our daily life where we always strive to provide the best service and are responsible for all our customers. Customer satisfaction is very important to us which is why we are committed to always pushing our customer service standards and providing the right solution for your business needs.</p>
+        </div>
     </div>
 </div>
+</section>
 
+<section id="handshake">
+    
 <div class="container-fluid container-handshake">
     <div class="handshake-overlay">
         <div class="handshake-content">
@@ -132,6 +130,7 @@
         </div>
     </div>
 </div>
+</section>
 
 <div class="container-fluid container-our-team">
     <div class="our-team-title">
@@ -140,7 +139,7 @@
 
     <div class="our-team-img">
         <div class="img-1 img-hover" data-aos="fade-down" data-aos-duration="900" data-aos-offset="300">
-            <img class="img-team" src="{{ asset('img/Pak-Lukman.png') }}" alt="" width="210px" style="top: -12rem;">
+            <img class="img-team" src="{{ asset('img/Pak-Lukman.png') }}" alt="" style="top: -12rem;">
             <div class="textnya mt-5">
                 <h4 style="text-shadow:0 0 10px rgba(0, 0, 0, 0.877);margin-left:.5rem;letter-spacing: 2.4px;font-weight:600">Lukmanul Hakim</h4>
                 <p style="font-size:15px;margin-left: .1rem;letter-spacing: 1px;width:100%;text-align:center"> OPERATIONAL DIRECTOR</p>
@@ -148,7 +147,7 @@
         </div>
 
         <div class="img-2 img-hover" data-aos="fade-up" data-aos-duration="900" data-aos-offset="300" data-aos-delay="700">
-            <img class="img-team" src="{{ asset('img/Pak-Sony.png') }}" alt="" width="210px" style="top: -12rem;">
+            <img class="img-team" src="{{ asset('img/Pak-Sony.png') }}" alt="" style="top: -12rem;">
             <div class="textnya mt-5">
                 <h4 style="text-shadow:0 0 10px rgba(0, 0, 0, 0.877);margin-left:.5rem;letter-spacing: 2.4px;font-weight:600">Marsono Mardi</h4>
                 <p style="font-size:15px;margin-left: .1rem;letter-spacing: 1px;width:100%">PROGRAM DEVELOPMENT <br> DIRECTOR</p>
@@ -156,7 +155,7 @@
         </div>
 
         <div class="img-3 img-hover" data-aos="fade-down" data-aos-duration="900" data-aos-offset="300">
-            <img class="img-team" src="{{ asset('img/Pak-Asrul.png') }}" alt="" width="210px" style="top: -12rem;">
+            <img class="img-team" src="{{ asset('img/Pak-Asrul.png') }}" alt="" style="top: -12rem;">
             <div class="textnya mt-5">
                 <h4 style="text-shadow:0 0 10px rgba(0, 0, 0, 0.877);margin-left:.5rem;letter-spacing: 2.4px;font-weight:600; text-align:center">Asrul Sani</h4>
                 <p style="font-size:15px;margin-left: .1rem;letter-spacing: 1px;width:100%;text-align:center">PRESIDENT COMMISIONER</p>
@@ -164,7 +163,7 @@
         </div>
 
         <div class="img-4 img-hover" data-aos="fade-up" data-aos-duration="900" data-aos-offset="300" data-aos-delay="700">
-            <img class="img-team" src="{{ asset('img/Pak-Tanto.png') }}" alt="" width="210px" style="top: -12rem;">
+            <img class="img-team" src="{{ asset('img/Pak-Tanto.png') }}" alt="" style="top: -12rem;">
             <div class="textnya mt-5">
                 <h4 style="text-shadow:0 0 10px rgba(0, 0, 0, 0.877);margin-left:.5rem;letter-spacing: 2.4px;font-weight:600; text-align:center">Hartanto</h4>
                 <p style="font-size:15px;margin-left: .1rem;letter-spacing: 1px;width:100%;text-align:center">PRESIDENT DIRECTOR</p>
@@ -172,7 +171,7 @@
         </div>
 
         <div class="img-5 img-hover" data-aos="fade-down" data-aos-duration="900" data-aos-offset="300">
-            <img class="img-team" src="{{ asset('img/Pak-Pri.png') }}" alt="" width="210px" style="top: -12rem;">
+            <img class="img-team" src="{{ asset('img/Pak-Pri.png') }}" alt="" style="top: -12rem;">
             <div class="textnya mt-5">
                 <h4 style="text-shadow:0 0 10px rgba(0, 0, 0, 0.877);margin-left:.5rem;letter-spacing: 2.4px;font-weight:600; text-align:center">Supriya Lelana</h4>
                 <p style="font-size:15px;margin-left: .1rem;letter-spacing: 1px;width:100%;text-align:center">BOARD OF COMMISSIONER</p>
@@ -244,7 +243,7 @@
                     <h6>TRAINING <br> PROGRAM</h6>
                 </div>
             </div>
-            <div class="product-card" data-aos="fade-left" data-aos-offset="100px">
+            <div class="product-card product-top" data-aos="fade-left" data-aos-offset="100px">
                 <div class="product-card-img">
                     <img class="product-img1" src="{{ asset ('img/fda.jpg')}}" alt="">
                 </div>
@@ -252,7 +251,7 @@
                     <h6>FDA <br> PROGRAM</h6>
                 </div>
             </div>
-            <div class="product-card" data-aos="fade-left" data-aos-offset="100px">
+            <div class="product-card product-top" data-aos="fade-left" data-aos-offset="100px">
                 <div class="product-card-img">
                     <img class="product-img1" src="{{ asset ('img/insfenger.png')}}" alt="">
                 </div>
@@ -260,7 +259,7 @@
                     <h6>INSFENGER <br> (CONFERENCE <br> ARRANGER)</h6>
                 </div>
             </div>
-            <div class="product-card" data-aos="fade-left" data-aos-offset="100px">
+            <div class="product-card product-top" data-aos="fade-left" data-aos-offset="100px">
                 <div class="product-card-img">
                     <img class="product-img1" src="{{ asset ('img/opspiry.jpg')}}" alt="">
                 </div>
@@ -269,7 +268,7 @@
                 </div>
             </div>
             
-            <div class="product-card" data-aos="fade-right">
+            <div class="product-card product-top" data-aos="fade-right">
                 <div class="product-card-img">
                     <img class="product-img1" src="{{ asset ('img/legspiry.jpg')}}" alt="">
                 </div>
@@ -277,7 +276,7 @@
                     <h6>LEGSPIRY <br> (LEGAL <br> CONSULTANT)</h6>
                 </div>
             </div>
-            <div class="product-card" data-aos="fade-right">
+            <div class="product-card product-top" data-aos="fade-right">
                 <div class="product-card-img">
                     <img class="product-img1" src="{{ asset ('img/company.jpg')}}" alt="">
                 </div>
@@ -285,7 +284,7 @@
                     <h6>COMPANY <br> LICENCE</h6>
                 </div>
             </div>
-            <div class="product-card" data-aos="fade-right">
+            <div class="product-card product-top" data-aos="fade-right">
                 <div class="product-card-img">
                     <img class="product-img1" src="{{ asset ('img/imagery.jpg')}}" alt="">
                 </div>
@@ -293,7 +292,7 @@
                     <h6>IMAGERY <br> (BRAND <br> BUILDER)</h6>
                 </div>
             </div>
-            <div class="product-card" data-aos="fade-right">
+            <div class="product-card product-top" data-aos="fade-right">
                 <div class="product-card-img">
                     <img class="product-img1" src="{{ asset ('img/inssearch.jpg')}}" alt="">
                 </div>
@@ -301,7 +300,7 @@
                     <h6>INSSEARCH <br> (HEAD <br> HUNTER)</h6>
                 </div>
             </div>
-            <div class="product-card" data-aos="fade-right">
+            <div class="product-card product-top" data-aos="fade-right">
                 <div class="product-card-img">
                     <img class="product-img1" src="{{ asset ('img/instrainment.jpg')}}" alt="">
                 </div>
@@ -315,7 +314,7 @@
 
 <div class="container-fluid container-solution">
     <div class="solution-overlay">
-    <div class="all-solution position-relative" style="padding-left:3.5rem">
+    <div class="all-solution position-relative">
             <div class="text-solution pt-5" data-aos="fade-up" data-aos-duration="1500">
                 <h1 class="text-white" style="font-size: 67px;font-weight:600;text-shadow:2px 3px #000">OUR</h1>
                 <h1 style="color: red;font-size: 50px;font-weight:600;text-shadow:2px 3px #000;letter-spacing: 5px;margin-top:-1.5rem">SOLUTION</h1>
@@ -327,10 +326,10 @@
             </div>
 
             <div class="content-solution d-flex" style="gap: 4rem;">
-                <div class="text-solution-1 mt-5 text-white" style="font-size: 17px;" data-aos="fade-up" data-aos-duration="1500" data-aos-delay="500">
-                    <p style="letter-spacing: .1px;">INSPIRY is here to help entrepreneurs, business owners, and company leaders to maximize all business management</p><p style="margin-top: -1rem"> performance, design and map out the right business strategy, and ultimately be able to improve the company’s financial </p> <p style="margin-top: -1rem;letter-spacing: .9px;">on an ongoing basis. We provide you with all the answers, and strategies and solutions that can bring your </p> <p style="margin-top: -1rem"> company and business to grow faster and better, and are fully scalable and controllable.</p>
+                <div class="text-solution-1 mt-5 text-white" style="font-size: 17px; text-align: justify; width:80%;" data-aos="fade-up" data-aos-duration="1500" data-aos-delay="500">
+                    <p style="letter-spacing: .2px;">INSPIRY is here to help entrepreneurs, business owners, and company leaders to maximize all business management performance, design and map out the right business strategy, and ultimately be able to improve the company’s financial on an ongoing basis. We provide you with all the answers, and strategies and solutions that can bring your  company and business to grow faster and better, and are fully scalable and controllable.</p>
 
-                    <p>With the increase in the company’s internal competence and the ability to manage all company resources accompanied by </p> <p style="letter-spacing: .2px; margin-top: -1rem">and speed in responding to the company’s external conditions. Our clients are able to take their company and business</p><p style="margin-top: -1rem">to a level that is more advanced than its previous position and excel in business competition. Client companies also have a</p><p style="margin-top: -1rem">series of solutions and strategies, especially dealing with recession, crisis and decline successfully</p>
+                    <p style="letter-spacing: .2px">With the increase in the company’s internal competence and the ability to manage all company resources accompanied by foresight and speed in responding to the company’s external conditions. Our clients are able to take their company and business to a level that is more advanced than its previous position and excel in business competition. Client companies also have a series of solutions and strategies, especially dealing with recession, crisis and decline successfully</p>
                 </div>
 
                 <div class="btn-contact text-white">
@@ -342,7 +341,7 @@
             </div>
         
 
-        <div class="our-client text-white text-center" style="display: flex; gap:2rem ;justify-content: center;align-items: center;width: 100%;background:rgba(0, 0, 0, 0.5);height:50vh;margin-left: -3rem;margin-top:5rem">
+        <div class="our-client text-white text-center" style="display: flex; gap:2rem ;justify-content: center;align-items: center;background:rgba(0, 0, 0, 0.5);height:50vh;margin-left: -3rem;margin-top:5rem">
             {{-- <div class="column" style="width: 33%;height:220px;background:rgba(255, 255, 255, 0.137);margin-left: 4.5rem;margin-top:2rem">
                 <div class="textnya" style="margin-top:4rem">
                     <h1 id='0101'>150</h1><h2 style="position: relative;top:-4rem; font-size:36px;left:2.9rem">+</h2>

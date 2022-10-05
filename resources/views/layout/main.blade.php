@@ -4,7 +4,7 @@
     <!-- Required meta tags -->
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-
+    <link rel="icon" type="image/x-icon" href="img/logo.png">
     <!-- My style -->
     <link rel="stylesheet" href="css/style.css">
 
@@ -58,15 +58,15 @@
         </a>
     </div>
 
-    <nav class="container-fluid navbar navbar-expand" id="navbar">
+    <nav class="container-fluid navbar navbar-expand-lg bg-dark" id="navbar">
         <div class="container-fluid">
             <a class="navbar-brand" href="#">
                 <img src="img/logo.png" alt="" width="30" height="24" class="navbar-brand-img">
             </a>
-            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarTogglerDemo02" aria-controls="navbarTogglerDemo02" aria-expanded="false" aria-label="Toggle navigation">
             <span class="navbar-toggler-icon"></span>
-            </button>
-            <div class="navbar navbar-item" id="navbarSupportedContent">
+          </button>
+            <div class="navbar navbar-item collapse navbar-collapse" id="navbarTogglerDemo02">
                 <ul class="navbar-nav">
                     <li class="nav-item">
                         <a class="nav-link text-light" aria-current="page" href="#">HOME</a>
@@ -112,9 +112,7 @@
                     <li class="nav-item">
                         <a class="nav-link text-light" aria-current="page" href="#">CONTACT</a>
                     </li>
-                </ul>
-            </div>
-            <div class="nav-socmed">
+                    <div class="nav-socmed">
                 <a href="">
                     <i class="fa-brands fa-youtube" style="color: red"></i>
                 </a>
@@ -124,6 +122,8 @@
                 <a href="">
                     <i class="fa-brands fa-instagram" style="color: red"></i>
                 </a>
+            </div>
+                </ul>
             </div>
         </div>
     </nav>
@@ -242,6 +242,7 @@
         prevScrollpos = currentScrollPos;
         }
     </script>
+
     <!-- Initialize Swiper -->
     <script>
         var swiper = new Swiper(".mySwiper", {
