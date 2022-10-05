@@ -9,6 +9,9 @@
 html,body {
     overflow-x: visible;
 }
+.section{
+    margin-top: -10vh;
+}
 /* Before animation*/
 [data-aos="my-animation"] {
     transform: rotate(0) scale(0.6);
@@ -59,27 +62,26 @@ nav{
 }
 
 .navbar-brand-img{
-    width: 11vw;
-    height: 24vh;
+    width: 100%;
+    height: 100%;
     margin-top: 1vh;
     margin-left: 3vw;
 }
 .navbar-brand{
+    width: 14%;
     margin-top: 15vh;
     margin-left: 1vw;
 }
 
 .navbar-item{
     display: flex;
-    width: 75%;
-    margin-right: 3vw;
-    margin-left: 0;
+    width: 67%;
 }
 ul.navbar-nav{
     display: flex;
-    justify-content:space-around;
+    justify-content: center;
     width: 100%;
-    /* margin-left: 20vh; */
+    gap: 1.5vw;
 }
 ul.navbar-nav .nav-item{
     font-size: 18px;
@@ -96,8 +98,7 @@ ul.navbar-nav .nav-item{
 .nav-socmed{
     display: flex;
     justify-content: space-evenly;
-    width: 15vw;
-    margin-right: 2vw;
+    width: 15%;
 }
 .nav-socmed .fa-brands{
     font-size: 19px;
@@ -257,7 +258,7 @@ nav.sticky .search input::-webkit-input-placeholder {
 .container-gallery{
     background-color: rgb(145, 143, 143);
     margin-top: 10vh;
-    height: 115vh;
+    min-height: 117vh;
     overflow: hidden;
 }
 .gallery-title h1{
@@ -274,23 +275,22 @@ nav.sticky .search input::-webkit-input-placeholder {
     padding-right: 1vw;
 }
 .gallery-card{
-    width: 40vh;
-    height: 10vh;
+    width: 20%;
 }
 .gallery-card-top{
     margin-top: 7vh;
     display: flex;
-    gap: 5vw;
+    gap: 3vw;
     justify-content: center;
 }
 .gallery-card-bottom{
-    margin-top: 28vh;
+    margin-top: 12vh;
     display: flex;
-    gap: 5vw;
+    gap: 3vw;
     justify-content: center;
 }
 .gallery-img img{
-width: 40vh;
+width: 100%;
 }
 .gallery-content h6{
     margin-top: 1.5vh;
