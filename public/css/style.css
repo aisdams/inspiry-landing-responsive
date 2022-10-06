@@ -931,12 +931,75 @@ object-fit: cover;
     }
 }
 
+@media screen and (width: 1024px){
+    .navbar-brand-img {
+        display: none !important;
+        width: 100%;
+        height: 100%;
+    }
+    .nav-socmed {
+        display: none !important;
+    }
+    .container-about-us{
+        margin-bottom: 14rem;
+    }
+    .colomn-img-our img{
+        max-width: 120px;
+    }
+    .colomn-img-our h2{
+        font-size: 12px;
+    }
+    .our-partner-logo .inline {
+        margin-left: 1rem;
+        width: 90%;
+        height: 2px;
+        background: #000;
+        margin-top: -.1rem;
+    }
+    
+    .circlered{
+        position: relative;
+        left: 2rem !important;
+    }
+    .logo-about{
+        position: relative;
+        left: -2rem !important;
+    }
+    .our-team-img {
+        display: grid;
+        grid-template-columns: 250px 250px 250px;
+    }
+    .img-4 {
+        position: relative;
+        top: -30px;
+    }
+    .img-5 {
+        position: relative;
+        top: 30px;
+    }
+    .swiper-slide img {
+        display: block;
+        width: 200px;
+        height: 250px;
+        object-fit: cover;
+    }
+    .navbar-nav{
+        margin-left: -5rem;
+    }
+}
 
 @media only screen and (min-device-width: 1024px) and (max-device-width: 1199px) and (-webkit-min-device-pixel-ratio: 1){
-    .navbar-brand-img{
-        display: none;
+    .navbar-nav{
+        margin-left: -5rem;
     }
-
+    .navbar-brand-img {
+        display: none !important;
+        width: 100%;
+        height: 100%;
+    }
+    .nav-socmed {
+        display: none !important;
+    }
     .gallery-card-container{
         height: 220vh;
     }
@@ -1004,19 +1067,20 @@ object-fit: cover;
         font-size: 3vw;
     }
     .product {
-        margin-top:-3rem;
+        margin-top: 8rem;
     }
     .product-title h3{
         font-size: 3.7vw;
     }
     .container-solution{
-        margin-top: 120rem;
+        margin-top: 140rem;
     }
     .product-top{
-        margin-top: 14rem;
+        margin-top: 3rem;
     }
     .product-card {
         width: 100%;
+        height: 370px;
         box-shadow: 0 0 10px rgba(0, 0, 0, 0.473);
     }
     .product-card-container{
@@ -1051,9 +1115,10 @@ object-fit: cover;
 
     .container-about-us{
         max-height: 115vh;
+        margin-bottom: 10rem;
     }
     .imgleft{
-        display: none;
+        display: none !important;
         width: 0;
     }
     .about-us-content{
@@ -1075,7 +1140,12 @@ object-fit: cover;
         margin-left: auto;
         margin-right: auto;
     }
-
+    .swiper-slide img {
+        display: block;
+        width: 200px;
+        height: 250px;
+        object-fit: cover;
+    }
     .whatsapp-logo{
         display: none;
         width: 0;
@@ -1086,20 +1156,186 @@ object-fit: cover;
   and (max-device-width: 1023px) 
   and (-webkit-min-device-pixel-ratio: 1) {
     .navbar-brand-img {
-        display: none;
+        display: none !important;
+        width: 100%;
+        height: 100%;
     }
-
-    .imgleft img{
-        display: none;
+    .navbar-nav{
+        margin-left: 2rem;
+    }
+    .navbar.collapse {
+        display:flex;
+    }
+    .navbar.collapsing,
+    .navbar.show {
+        padding: 0;
+        margin-top: -1rem;
+        background:rgba(0, 0, 0, 0.549) !important;
+    }
+    .imgleft{
+        display: none !important;
     }
     .content-textnya {
         position:relative;
         top: 0;
     }
+    .product {
+        margin-top:-3rem;
+    }
+    .product-title h3{
+        font-size: 3.7vw;
+    }
+    .container-solution{
+        margin-top: 120rem;
+    }
+    .product-top{
+        margin-top: 1rem;
+    }
+    .product-card {
+        width: 100%;
+        height: 280px;
+        box-shadow: 0 0 10px rgba(0, 0, 0, 0.473);
+    }
+    .container-solution{
+        position: relative;
+        top: -25rem;
+    }
+    .product-card-container{
+        display: grid;
+        width: 100%;
+        padding: 0;
+        min-height: 100vh;
+        grid-template-columns: 300px 300px;
+        gap: 15px;
+    }
+    .product-card-img img{
+        width: 300px;
+    }
+    .product-card-content h6 {
+        font-size: 1.5vw;
+    }
     .our-team-img {
         display: block;
         width: 100%;
     }
+    .swiper-slide img {
+        display: block;
+        width: 200px;
+        height: 250px;
+        object-fit: cover;
+    }
+    .colomn-img-our img{
+        max-width: 105px;
+    }
+    .colomn-img-our h2{
+        font-size: 12px;
+    }
+    .our-partner-logo .inline {
+        margin-left: 1rem;
+        width: 90%;
+        height: 2px;
+        background: #000;
+        margin-top: -.1rem;
+    }
     
 }
 
+
+@media only screen and (min-device-width: 480px) 
+  and (max-device-width: 767px) 
+  and (-webkit-min-device-pixel-ratio: 1) {
+    .navbar-brand-img {
+        display: none !important;
+        width: 100%;
+        height: 100%;
+    }
+    .our-team-img{
+        display: none !important;
+    }
+    .imgleft{
+        display: none !important;
+    }
+    .gallery-card-top,.gallery-card-bottom {
+        display: grid;
+        width: 100%;
+        padding: 0;
+        min-height: 100vh;
+        grid-template-columns: 500px;
+        gap: 15px;
+    }
+    .gallery-content h6{
+        text-align: center;
+        font-size: 15px;
+    }
+    .culture {
+        margin-bottom: 23rem;
+    }
+    .container-solution {
+        margin-top: 30rem;
+    }
+    .culture-card-container {
+        display: grid;
+        width: 100%;
+        padding: 0;
+        justify-content: center;
+        justify-items: center;
+        align-items: center;
+        margin: 0 auto;
+        min-height: 100vh;
+        grid-template-columns: 100%;
+        gap: 15px;
+    }
+    .product {
+        margin-top:-6rem;
+    }
+    .product-title h3{
+        font-size: 3.7vw;
+    }
+    .container-solution{
+        margin-top: 90rem;
+    }
+    .product-top{
+        margin-top: 1rem;
+    }
+    .product-card {
+        width: 100%;
+        height: 200px;
+        box-shadow: 0 0 10px rgba(0, 0, 0, 0.473);
+    }
+    .product-card-container{
+        display: grid;
+        width: 100%;
+        padding: 0;
+        min-height: 120vh;
+        grid-template-columns: 220px 220px;
+        gap: 15px;
+    }
+    .product-card-img img{
+        width: 220px;
+    }
+    .product-card-content h6 {
+        font-size: 1.5vw;
+    }
+    .btn-contact {
+        position: relative;
+        width: 210px;
+        right: 25rem;
+        top: 40rem;
+        margin: 0;
+        height: 45px;
+        background: #9C2C2C;
+        border-radius: 5px;
+        cursor: pointer;
+    }
+    .title-btn {
+        padding: 0 !important;
+        margin: 0 !important;
+        text-align: center;
+    }
+    .container-solution {
+        height: 300vh;
+    }
+    .mySwiper {
+        margin-top: 90rem;
+    }
+  }
