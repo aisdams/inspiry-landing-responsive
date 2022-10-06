@@ -43,7 +43,7 @@
     <!-- AOS Animated -->
     <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
 
-    <title>Landing</title>
+    <title>Inspiry Consultant</title>
 </head>
 <body onload="load()">
     <div class="container-fluid preloader">
@@ -64,8 +64,8 @@
                 <img src="img/logo.png" alt="" width="30" height="24" class="navbar-brand-img">
             </a>
             <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarTogglerDemo02" aria-controls="navbarTogglerDemo02" aria-expanded="false" aria-label="Toggle navigation">
-            <span class="navbar-toggler-icon"></span>
-          </button>
+                <span class="navbar-toggler-icon"></span>
+            </button>
             <div class="navbar navbar-item collapse navbar-collapse" id="navbarTogglerDemo02">
                 <ul class="navbar-nav">
                     <li class="nav-item">
