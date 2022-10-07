@@ -26,6 +26,7 @@ html,body {
     opacity: 1; 
 }
 
+
 /* Preload */
 .preloader {
     position: fixed;
@@ -119,6 +120,10 @@ ul.navbar-nav .nav-item{
     transition: .3s;
     color: coral !important;
     scale: 1.1;
+}
+.nav-socmed p{
+    display: none;
+    width: 0;
 }
 
 .dropdown-toggle::after {
@@ -920,7 +925,6 @@ object-fit: cover;
 
 
 @media screen and (min-width: 1280px) and (max-width: 1440px){
-
     .our-team-img{
         justify-content: center;
         gap: 2rem;
@@ -956,7 +960,6 @@ object-fit: cover;
         margin-top: 1rem;
         background:rgba(0, 0, 0, 0.549) !important;
     }
-
 
     .gallery-card-container{
         max-height: 100%;
@@ -1231,13 +1234,39 @@ object-fit: cover;
         width: 100%;
         height: 100%;
     }
+
+    .nav-socmed .fa-brands{
+        font-size: 29px !important;
+        margin-left: -3rem !important;
+    }
+    .nav-socmed p{
+        font-size: 10px !important;
+    }
+    .nav-socmed{
+        justify-content: space-between;
+        width: 70%;
+        margin-left: auto;
+        margin-right: auto;
+    }
+    .nav-socmed a{
+        display: flex;
+        text-decoration: none;
+        color: rgba(255, 255, 255, 0.815);
+    }
     .navbar.collapsing,
     .navbar.show {
         padding: 0;
         margin-top: 1rem;
         background:rgba(0, 0, 0, 0.549) !important;
+        border-radius: 10px;
     }
-
+    ul.navbar-nav{
+        margin-left: 5vw;
+        margin-right: 5vw;
+    }
+    .nav-socmed p{
+        display: block;
+    }
 
 
     .imgleft{

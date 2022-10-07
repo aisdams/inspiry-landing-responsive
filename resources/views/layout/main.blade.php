@@ -72,7 +72,7 @@
                         <a class="nav-link text-light" aria-current="page" href="#">HOME</a>
                     </li>
                     <li class="nav-item dropdown">
-                        <a class="nav-link dropdown-toggle text-light" href="#collapseExample" id="navbarDropdown" role="button" data-bs-toggle="dropdown collapse" aria-expanded="false">
+                        <a class="nav-link dropdown-toggle text-light" href="#" id="navbarDropdown" role="button" data-bs-toggle="dropdown collapse" aria-expanded="false">
                         PROFILE <i class="fa-solid fa-chevron-down" style="font-size:14px"></i></a>
                         <ul class="dropdown-menu" aria-labelledby="navbarDropdown">
                             <li><a class="dropdown-item" href="#">A Thought</a></li>
@@ -112,17 +112,21 @@
                     <li class="nav-item">
                         <a class="nav-link text-light" aria-current="page" href="#">CONTACT</a>
                     </li>
+                    <hr style="color: white; border: 1px solid white;">
                     <div class="nav-socmed">
-                <a href="">
-                    <i class="fa-brands fa-youtube" style="color: red"></i>
-                </a>
-                <a href="">
-                    <i class="fa-brands fa-linkedin" style="color: blue"></i>
-                </a>
-                <a href="">
-                    <i class="fa-brands fa-instagram" style="color: red"></i>
-                </a>
-            </div>
+                        <a href="">
+                            <i class="fa-brands fa-youtube" style="color: red"></i>
+                            <p>Inspiry Consultant</p>
+                        </a>
+                        <a href="">
+                            <i class="fa-brands fa-linkedin" style="color: blue"></i>
+                            <p>InspiryconsultantCorp</p>
+                        </a>
+                        <a href="">
+                            <i class="fa-brands fa-instagram" style="color: red"></i>
+                            <p>@inspiryconsultant.Corp</p>
+                        </a>
+                    </div>
                 </ul>
             </div>
         </div>
@@ -229,7 +233,6 @@
         
         <script type="text/javascript" src="js/bootstrap/bootstrap-dropdown.js"></script>
     
-
     <script>
         AOS.init();
     </script>
