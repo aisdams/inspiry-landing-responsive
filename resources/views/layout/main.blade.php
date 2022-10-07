@@ -72,7 +72,7 @@
                         <a class="nav-link text-light" aria-current="page" href="#">HOME</a>
                     </li>
                     <li class="nav-item dropdown">
-                        <a class="nav-link dropdown-toggle text-light" href="#" id="navbarDropdown" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+                        <a class="nav-link dropdown-toggle text-light" href="#collapseExample" id="navbarDropdown" role="button" data-bs-toggle="dropdown collapse" aria-expanded="false">
                         PROFILE <i class="fa-solid fa-chevron-down" style="font-size:14px"></i></a>
                         <ul class="dropdown-menu" aria-labelledby="navbarDropdown">
                             <li><a class="dropdown-item" href="#">A Thought</a></li>
@@ -227,6 +227,9 @@
         })
     </script>
         
+        <script type="text/javascript" src="js/bootstrap/bootstrap-dropdown.js"></script>
+    
+
     <script>
         AOS.init();
     </script>

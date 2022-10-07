@@ -321,7 +321,7 @@
                 <div class="circle-1"></div>
             </div>
 
-            <div class="content-solution d-flex" style="gap: 4rem;">
+            <div class="content-solution" style="display: flex; gap: 4rem;">
                 <div class="text-solution-1 mt-5 text-white" style="font-size: 17px; text-align: justify; width:80%;" data-aos="fade-up" data-aos-duration="1500" data-aos-delay="500">
                     <p style="letter-spacing: .2px;">INSPIRY is here to help entrepreneurs, business owners, and company leaders to maximize all business management performance, design and map out the right business strategy, and ultimately be able to improve the company’s financial on an ongoing basis. We provide you with all the answers, and strategies and solutions that can bring your  company and business to grow faster and better, and are fully scalable and controllable.</p>
 
@@ -429,23 +429,23 @@
         <div class="our-partner-img mt-5" style="display: flex; justify-content:center;gap:2rem">
             <div class="colomn-img-our">
                 <img src="img/geslab.png" alt="" width="150px">
-                <h2 class="text-center text-partnert-1 mt-4">Association of</br>Indonesian medical</br>and laboratory</br>equipment</br>companies</h2>
+                <h2 class="text-center text-partnert-1 mt-4">Association of </br> Indonesian medical </br> and laboratory </br> equipment </br> companies</h2>
             </div>
-            <div class="colomn-img-our">
+            <div class="colomn-img-our our-img-2">
                 <img src="img/hostpital.jpeg" alt="" width="150px">
                 <h2 class="text-center text-partnert-6 mt-4">Indonesian Hospital</br> Association</h2>
             </div>
             <div class="colomn-img-our topnyaya">
                 <img src="img/pdhi.png" alt="" width="150px">
-                <h2 class="text-center text-partnert-2 mt-4">Indonesian</br>Veterinary</br>Association</h2>
+                <h2 class="text-center text-partnert-2 mt-4">Indonesian </br> Veterinary </br> Association</h2>
             </div>
             <div class="colomn-img-our topnyaya">
                 <img src="img/ui.png" alt="" width="150px">
-                <h2 class="text-center text-partnert-3 mt-4">Faculty of</br>Engineering -</br>Indonesia University</h2>
+                <h2 class="text-center text-partnert-3 mt-4">Faculty of </br> Engineering -</br>Indonesia University</h2>
             </div>
             <div class="colomn-img-our topnyaya">
                 <img src="img/ipwija.png" alt="" width="150px">
-                <h2 class="text-center text-partnert-4 mt-4">Institute of</br>Economic Science</br>IPWIJA</h2>
+                <h2 class="text-center text-partnert-4 mt-4">Institute of </br> Economic Science </br>IPWIJA</h2>
             </div>
             <div class="colomn-img-our topnyaya5" style="margin-top: 2rem">
                 <img src="img/idbi.webp" alt="" width="150px">
