@@ -1,113 +1,74 @@
 @extends('layout.main')
 
 @section('content')
-<section id="gallery">
-    <div class="container-fluid container-gallery">   
-        <div class="gallery-title">
-            <h1>GALLERY</h1>
+<div class="container-fluid container-our-partner our-partner-logo">
+    {{-- <h1>Our Partner</h1> --}}
+    <div class="our-partner-img">
+        <div class="colomn-img-our">
+            <img src="img/geslab.png" alt="">
+            {{-- <h2 class="text-partnert-1">Association of </br> Indonesian medical </br> and laboratory </br> equipment </br> companies</h2> --}}
         </div>
-        <div class="gallery-card-container">
-            <div class="gallery-card-top" data-aos="fade-right" data-aos-duration="1500">
-                <div class="gallery-card">
-                    <div class="gallery-img">
-                        <img src="img/gallery1.jpeg" alt="">
-                    </div>
-                    <div class="gallery-content">
-                        <h6>COMPANY PROFILE - PT. INSPIRY INDONESIA KONSULTAN</h6>
-                    </div>
-                </div>
-                <div class="gallery-card">
-                    <div class="gallery-img">
-                        <img src="img/gallery2.jpeg" alt="">
-                    </div>
-                    <div class="gallery-content">
-                        <h6>IT | TIME MANAGEMENT YANG BAIK</h6>
-                    </div>
-                </div>
-                <div class="gallery-card">
-                    <div class="gallery-img">
-                        <img src="img/gallery3.jpeg" alt="">
-                    </div>
-                    <div class="gallery-content">
-                        <h6>TEASER | INSPIRY HADIR DI INDO LIVESTOCK 2022 EXHIBITION</h6>
-                    </div>
-                </div>
-                <div class="gallery-card">
-                    <div class="gallery-img">
-                        <img src="img/gallery3.jpeg" alt="">
-                    </div>
-                    <div class="gallery-content">
-                        <h6>IT | MENTAL BAJA</h6>
-                    </div>
-                </div>
-            </div>
-            <div class="gallery-card-bottom" data-aos="fade-left" data-aos-duration="1500" data-aos-delay="300">
-                <div class="gallery-card">
-                    <div class="gallery-img">
-                        <img src="img/gallery5.jpeg" alt="">
-                    </div>
-                    <div class="gallery-content">
-                        <h6>TEASER LEADERSHIP VIBES 26 MARET 2022 AT HOTEL ASTON PRIORITY SIMATUPANG & CONFERENCE CENTER</h6>
-                    </div>
-                </div>
-                <div class="gallery-card">
-                    <div class="gallery-img">
-                        <img src="img/gallery6.jpeg" alt="">
-                    </div>
-                    <div class="gallery-content">
-                        <h6>OBRAS | TIPS SUKSES BISNIS ALAT KESEHATAN EPISODE 2</h6>
-                    </div>
-                </div>
-                <div class="gallery-card">
-                    <div class="gallery-img">
-                        <img src="img/gallery7.jpeg" alt="">
-                    </div>
-                    <div class="gallery-content">
-                        <h6>OBRAS | TIPS SUKSES BISNIS ALAT KESEHATAN EPISODE 3</h6>
-                    </div>
-                </div>
-                <div class="gallery-card">
-                    <div class="gallery-img">
-                        <img src="img/gallery8.jpeg" alt="">
-                    </div>
-                    <div class="gallery-content">
-                        <h6>OBRAS | TIPS SUKSES DI BISNIS ALAT KESEHATAN PENGALAMAN EPISODE TESTIMONI PT MEGA GLOBAL PRATAMA</h6>
-                    </div>
-                </div>
-            </div>
+        <div class="colomn-img-our our-img-2">
+            <img src="img/hostpital.jpeg" alt="">
+            {{-- <h2 class="text-partnert-6">Indonesian Hospital</br> Association</h2> --}}
+        </div>
+        <div class="colomn-img-our topnyaya">
+            <img src="img/pdhi.png" alt="">
+            {{-- <h2 class="text-partnert-2">Indonesian </br> Veterinary </br> Association</h2> --}}
+        </div>
+        <div class="colomn-img-our topnyaya">
+            <img src="img/ui.png" alt="">
+            {{-- <h2 class="text-partnert-3">Faculty of </br> Engineering -</br>Indonesia University</h2> --}}
+        </div>
+        <div class="colomn-img-our topnyaya">
+            <img src="img/ipwija.png" alt="">
+            {{-- <h2 class="text-partnert-4">Institute of </br> Economic Science </br>IPWIJA</h2> --}}
+        </div>
+        <div class="colomn-img-our topnyaya5">
+            <img src="img/idbi.webp" alt="">
+            {{-- <h2 class="text-partnert-5">Indonesian Business</br>Digital Institute</h2> --}}
         </div>
     </div>
-</section>
+        {{-- <div class="inline"></div> --}}
+</div>
 
-    <div class="container-fluid container-about-us text-end fw-bold">
+    <div class="container-fluid container-about-us">
 
-        <div class="imgleft" >
-            <img src="{{ asset('circle-pink.png') }}" alt="" width="800px" data-aos="fade-down" class="circlepink">
-            <img src="{{ asset('circle-red.png') }}" alt="" class="circlered">
-            <img src="img/logo.png" alt="" width="300px" class="logo-about" data-aos="my-animation" data-aos-duration="2000" id="reload">
+        <div class="about-us-logo">
+            <img class="about-logo" src="{{ asset ('/img/about-1.jpg')}}" alt="">
         </div>
 
         <div class="about-us-content">
             <div class="about-us-title">
-                <h1 data-aos="zoom-in" data-aos-duration="1000" style="font-size: 45px;letter-spacing: 8px;color:red;text-shadow: 2px 1px #ff0000da; font-weight:600; text-shadow:1px 1px 2px black">ABOUT</h1>
-                <h1 data-aos="zoom-in" data-aos-duration="1000" style="font-size: 50px;letter-spacing: 8px;text-shadow: 2px 1px #2c2c2cda; font-weight:600; text-shadow:1px 1px 2px black">US</h1>
-                <div data-aos="zoom-in" data-aos-duration="1000" class="circlenyaya position-relative mt-4" style="display: flex;gap: .6rem;float:right; margin-right:1rem">
-                    <div class="circle-1" style="width:6px; height:6px;border-radius:30px;background:rgb(0, 0, 0)"></div>
-                    <div class="circle-1" style="width:6px; height:6px;border-radius:30px;background:rgb(0, 0, 0)"></div>
-                    <div class="circle-1" style="width:6px; height:6px;border-radius:30px;background:rgb(0, 0, 0)"></div>
-                </div> 
+                <h5>ABOUT US</h5>
+            </div>
+            <div class="about-us-text">
+                <p class="about-text-content">
+                    INSPIRY INDONESIA CONSULTANT Founded in September 2019 is one of the consulting companies that is present in order to improve the competitiveness of the company which concentrates on productive management, good company quality standards and a strong work team.
+                </p>
+                <p class="about-text-content">
+                    In productive management, the scope of the collaboration includes current condition analysis, company grand design, business implementation plan, and breakthroughs needed in order to accelerate the achievement of targets in the work plan. This is a guideline so that the company runs according to what has been agreed by all shareholders, is easy to control, and can adapt quickly.
+                </p>
+                <p class="about-text-content">
+                    The quality of the company's standards is important in future competition so that the company's position in the market is more credible, competent and classy.
+                </p>
+                <p class="about-text-content">
+                    We also have training modules that vary greatly according to the demands of the times and the company, which are expected to improve the performance of the work team as a whole, standardized and sustainable. This can also support the creation of a productive climate in creating future leaders within the company.
+                </p>
+                <p class="about-text-content">
+                    Part of our success stems from our motto "Your Trusted Partner". This motto has become the DNA in our daily life where we always strive to provide the best service and are responsible for all our customers. Customer satisfaction is very important to us which is why we are committed to always pushing our customer service standards and providing the right solution for your business needs.
+                </p>
             </div>
 
-            <div class="about-us-text " data-aos="zoom-in" data-aos-duration="1000">
-                <p style=" letter-spacing: .3px;font-weight:400;font-size:18px">INSPIRY INDONESIA CONSULTANT Founded in September 2019 is one of the consulting  companies that is present in order to improve the competitiveness of the company which  concentrates on productive management, good company quality standards and a strong work team.</p>
-        
-                <p style=" letter-spacing: -.3px;font-weight:400;font-size:18px">In productive management, the scope of the collaboration includes current condition analysis, company grand design, business implementation plan, and breakthroughs needed in order to accelerate the achievement of targets in the work plan. This is a guideline so that the companyruns according to what has been agreed by all shareholders, is easy to control, and can adaptquickly.</p>
-        
-                <p style=" letter-spacing: -.3px;font-weight:400;font-size:18px">The quality of the company’s standards is important in future competition so that the company’s position in the market is more credible, competent and classy.</p>
-        
-                <p style=" letter-spacing: -.3px;font-weight:400;font-size:18px">We also have training modules that vary greatly according to the demands of the times and the company, which are expected to improve the performance of the work team as a whole, standardized and sustainable. This can also support the creation of a productive climate in creating future leaders within the company.</p>
-        
-                <p style=" letter-spacing: -.1px;font-weight:400;font-size:18px">Part of our success stems from our motto “Your Trusted Partner”. This motto has become the DNA in our daily life where we always strive to provide the best service and are responsible for all our customers. Customer satisfaction is very important to us which is why we are committed to always pushing our customer service standards and providing the right solution for your business needs.</p>
+            <div class="about-us-button">
+                <div class="about-button">
+                    <a href="">Learn More</a>
+                    <i class="fa-solid fa-arrow-right"></i>
+                </div>
+                <div class="about-button">
+                    <a href="">Contact Us</a>
+                    <i class="fa-solid fa-arrow-right"></i>
+                </div>
             </div>
         </div>
     </div>
@@ -127,6 +88,60 @@
         </div>
     </div>
 </section>
+
+
+{{-- gallery --}}
+<div class="all-galery">
+
+    <div class="line-gallery"></div>
+
+    <div class="gallery">
+        <h1>GALLERY</h1>
+    </div>
+    <div class="container container-gallery">
+      <div class="text-gallery">
+        <h3 class="text-start ">Our <br/>Gallery</h3>
+        <p class="w-25 text-dark">Lorem ipsum dolor sit amet consectetur, adipisicing elit. Iusto voluptate nesciunt veritatis expedita!</p>
+      </div>
+       <!-- Swiper -->
+      <div class="swiper mySwiper">
+        <div class="swiper-wrapper">
+          <div class="swiper-slide">
+            <img src="img/gallery1.jpeg" />
+          </div>
+          <div class="swiper-slide">
+            <img src="img/gallery2.jpeg" />
+          </div>
+          <div class="swiper-slide">
+            <img src="img/gallery3.jpeg" />
+          </div>
+          <div class="swiper-slide">
+            <img src="img/gallery4.jpeg" />
+          </div>
+          <div class="swiper-slide">
+            <img src="img/gallery5.jpeg" />
+          </div>
+          <div class="swiper-slide">
+            <img src="img/gallery6.jpeg" />
+          </div>
+          <div class="swiper-slide">
+            <img src="img/gallery7.jpeg" />
+          </div>
+          <div class="swiper-slide">
+            <img src="img/gallery8.jpeg" />
+          </div>
+        </div>
+        <div class="swiper-button-next"></div>
+        <div class="swiper-button-prev"></div>
+        <div class="swiper-pagination"></div>
+      </div>
+  
+    </div>
+
+  </div>
+
+  {{-- end gallery --}}
+
 
 <div class="container-fluid container-our-team">
     <div class="our-team-title">
@@ -177,6 +192,8 @@
 </div>
 
 <div class="container-fluid container-culture">
+    
+    <div class="img-ilustration"></div>
     <div class="culture">
         <div class="culture-title">
             <h3>OUR CULTURE & SOUL</h3>
@@ -213,6 +230,7 @@
             </div>
         </div>
     </div>
+
     <div class="product">
         <div class="product-header">
             <div class="product-title">
@@ -222,89 +240,50 @@
             <hr>
         </div>
 
-        <div class="product-card-container">
-            <div class="product-card" data-aos="fade-left" data-aos-offset="100px">
-                <div class="product-card-img">
-                    <img class="product-img1" src="{{ asset ('img/accepted.jpg')}}" alt="">
-                </div>
-                <div class="product-card-content">
-                    <h6>CERTIFICATION</h6>
-                </div>
-            </div>
-            <div class="product-card" data-aos="fade-left" data-aos-offset="100px">
-                <div class="product-card-img">
-                    <img class="product-img1" src="{{ asset ('img/training.jpg')}}" alt="">
-                </div>
-                <div class="product-card-content">
-                    <h6>TRAINING <br> PROGRAM</h6>
-                </div>
-            </div>
-            <div class="product-card product-top" data-aos="fade-left" data-aos-offset="100px">
-                <div class="product-card-img">
-                    <img class="product-img1" src="{{ asset ('img/fda.jpg')}}" alt="">
-                </div>
-                <div class="product-card-content">
-                    <h6>FDA <br> PROGRAM</h6>
-                </div>
-            </div>
-            <div class="product-card product-top" data-aos="fade-left" data-aos-offset="100px">
-                <div class="product-card-img">
-                    <img class="product-img1" src="{{ asset ('img/insfenger.png')}}" alt="">
-                </div>
-                <div class="product-card-content">
-                    <h6>INSFENGER <br> (CONFERENCE <br> ARRANGER)</h6>
-                </div>
-            </div>
-            <div class="product-card product-top" data-aos="fade-left" data-aos-offset="100px">
-                <div class="product-card-img">
-                    <img class="product-img1" src="{{ asset ('img/opspiry.jpg')}}" alt="">
-                </div>
-                <div class="product-card-content">
-                    <h6>OPSPIRY <br> (OPERATING <br> MANAGEMENT <br> SYSTEM)</h6>
-                </div>
-            </div>
-            
-            <div class="product-card product-top" data-aos="fade-right">
-                <div class="product-card-img">
-                    <img class="product-img1" src="{{ asset ('img/legspiry.jpg')}}" alt="">
-                </div>
-                <div class="product-card-content">
-                    <h6>LEGSPIRY <br> (LEGAL <br> CONSULTANT)</h6>
-                </div>
-            </div>
-            <div class="product-card product-top" data-aos="fade-right">
-                <div class="product-card-img">
-                    <img class="product-img1" src="{{ asset ('img/company.jpg')}}" alt="">
-                </div>
-                <div class="product-card-content">
-                    <h6>COMPANY <br> LICENCE</h6>
-                </div>
-            </div>
-            <div class="product-card product-top" data-aos="fade-right">
-                <div class="product-card-img">
-                    <img class="product-img1" src="{{ asset ('img/imagery.jpg')}}" alt="">
-                </div>
-                <div class="product-card-content">
-                    <h6>IMAGERY <br> (BRAND <br> BUILDER)</h6>
-                </div>
-            </div>
-            <div class="product-card product-top" data-aos="fade-right">
-                <div class="product-card-img">
-                    <img class="product-img1" src="{{ asset ('img/inssearch.jpg')}}" alt="">
-                </div>
-                <div class="product-card-content">
-                    <h6>INSSEARCH <br> (HEAD <br> HUNTER)</h6>
-                </div>
-            </div>
-            <div class="product-card product-top" data-aos="fade-right">
-                <div class="product-card-img">
-                    <img class="product-img1" src="{{ asset ('img/instrainment.jpg')}}" alt="">
-                </div>
-                <div class="product-card-content">
-                    <h6>INSTRAINMENT <br> (TRAINING & <br> ENTERTAINMENT)</h6>
-                </div>
-            </div>
+        
+    <div class="our-product">
+        <div class="cardn">
+            <img src="img/accepted.jpg" alt="">
+            <h6>CERTIFICATION</h6>
         </div>
+    
+        <div class="cardn">
+            <img src="img/training.jpg" alt="">
+            <h6>TRAINING PROGRAM</h6>
+        </div>
+
+        <div class="cardn">
+            <img src="img/fda.jpg" alt="">
+            <h6>FDA <br> PROGRAM</h6>
+        </div>
+
+        <div class="cardn">
+            <img src="img/insfenger.png" alt="">
+            <h6>INSFENGER <br> (CONFERENCE ARRANGER)</h6>
+        </div>
+    </div>
+    <div class="our-product-1">
+        <div class="cardn">
+            <img src="img/opspiry.jpg" alt="">
+            <h6>OPSPIRY <br> (OPERATING MANAGEMENT SYSTEM)</h6>
+        </div>
+    
+        <div class="cardn">
+            <img src="img/legspiry.jpg" alt="">
+            <h6>LEGSPIRY <br> (LEGAL CONSULTANT)</h6>
+        </div>
+
+        <div class="cardn">
+            <img src="img/company.jpg" alt="">
+            <h6>COMPANY LICENCE</h6>
+        </div>
+
+        <div class="cardn">
+            <img src="img/imagery.jpg" alt="">
+            <h6>IMAGERY <br> (BRAND BUILDER)</h6>
+        </div>
+    </div>
+
     </div>
 </div>
 
@@ -379,139 +358,6 @@
     </div>
 </div>
 
-<!-- Swiper -->
-<div class="swiper mySwiper">
-        <div class="swiper-wrapper">
-        <div class="swiper-slide">
-            <img src="https://www.inspiryconsultant.com/wp-content/uploads/2022/03/Screen-Shot-2022-02-25-at-07.56.13-235x300.png" alt="">
-        </div>
-        <div class="swiper-slide">
-            <img src="https://www.inspiryconsultant.com/wp-content/uploads/2022/03/Screen-Shot-2022-02-25-at-07.56.35-233x300.png" alt="" style="margin-left: -1rem;">
-        </div>
-        <div class="swiper-slide">
-            <img src="https://www.inspiryconsultant.com/wp-content/uploads/2022/03/Screen-Shot-2022-02-25-at-07.56.51-218x300.png" alt="" style="margin-left: -2rem;">
-        </div>
-        <div class="swiper-slide">
-            <img src="https://www.inspiryconsultant.com/wp-content/uploads/2022/03/Screen-Shot-2022-02-25-at-07.57.06-247x300.png" alt="" style="margin-left: -3rem;"></div>
-        <div class="swiper-slide">
-            <img src="https://www.inspiryconsultant.com/wp-content/uploads/2022/03/Screen-Shot-2022-02-25-at-07.57.19-1-215x300.png" alt="" style="margin-left: -4rem;">
-        </div>
-        <div class="swiper-slide">
-            <img src="https://www.inspiryconsultant.com/wp-content/uploads/2022/03/Screen-Shot-2022-02-25-at-07.57.41-1-212x300.png" alt="" style="margin-left: -3rem;">
-        </div>
-        <div class="swiper-slide">
-            <img src="https://www.inspiryconsultant.com/wp-content/uploads/2022/03/Screen-Shot-2022-02-25-at-07.57.59-1-212x300.png" alt="" style="margin-left: -3rem;">
-        </div>
-        <div class="swiper-slide">
-            <img src="https://www.inspiryconsultant.com/wp-content/uploads/2022/03/WhatsApp-Image-2022-02-24-at-17.40.11-1-1-1-197x300.jpeg" alt="" style="margin-left: -3rem;">
-        </div>
-        <div class="swiper-slide">
-            <img src="https://www.inspiryconsultant.com/wp-content/uploads/2022/03/WhatsApp-Image-2022-02-24-at-17.40.11-2-204x300.jpeg" alt="" style="margin-left: -3rem;">
-        </div>
-        <div class="swiper-slide">
-            <img src="https://www.inspiryconsultant.com/wp-content/uploads/2022/03/WhatsApp-Image-2022-02-24-at-17.40.12-1-200x300.jpeg" alt="" style="margin-left: -3rem;">
-        </div>
-        <div class="swiper-slide">
-            <img src="https://www.inspiryconsultant.com/wp-content/uploads/2022/06/Screen-Shot-2022-06-02-at-14.40.42-212x300.png" alt="" style="margin-left: -3rem;">
-        </div>
-        <div class="swiper-slide">
-            <img src="https://www.inspiryconsultant.com/wp-content/uploads/2022/06/Screen-Shot-2022-06-06-at-14.43.40-216x300.png" alt="" style="margin-left: -3rem;">
-        </div>
-        <div class="swiper-slide">
-            <img src="https://www.inspiryconsultant.com/wp-content/uploads/2022/06/Screen-Shot-2022-06-06-at-15.55.41-212x300.png" alt="" style="margin-left: -3rem;">
-        </div>
-        </div>
-        {{-- <div class="swiper-pagination"></div> --}}
-</div>
+{{-- <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1440 320"><path fill=" rgba(204,204,0, 0.1)" fill-opacity="1" d="M0,96L48,128C96,160,192,224,288,218.7C384,213,480,139,576,128C672,117,768,171,864,176C960,181,1056,139,1152,138.7C1248,139,1344,181,1392,202.7L1440,224L1440,0L1392,0C1344,0,1248,0,1152,0C1056,0,960,0,864,0C768,0,672,0,576,0C480,0,384,0,288,0C192,0,96,0,48,0L0,0Z"></path></svg> --}}
 
-<div class="container-fluid container-our-partner our-partner-logo mt-5 mb-5">
-        <h1>Our Partner</h1>
-        <div class="our-partner-img mt-5" style="display: flex; justify-content:center;gap:2rem">
-            <div class="colomn-img-our">
-                <img src="img/geslab.png" alt="" width="150px">
-                <h2 class="text-center text-partnert-1 mt-4">Association of </br> Indonesian medical </br> and laboratory </br> equipment </br> companies</h2>
-            </div>
-            <div class="colomn-img-our our-img-2">
-                <img src="img/hostpital.jpeg" alt="" width="150px">
-                <h2 class="text-center text-partnert-6 mt-4">Indonesian Hospital</br> Association</h2>
-            </div>
-            <div class="colomn-img-our topnyaya">
-                <img src="img/pdhi.png" alt="" width="150px">
-                <h2 class="text-center text-partnert-2 mt-4">Indonesian </br> Veterinary </br> Association</h2>
-            </div>
-            <div class="colomn-img-our topnyaya">
-                <img src="img/ui.png" alt="" width="150px">
-                <h2 class="text-center text-partnert-3 mt-4">Faculty of </br> Engineering -</br>Indonesia University</h2>
-            </div>
-            <div class="colomn-img-our topnyaya">
-                <img src="img/ipwija.png" alt="" width="150px">
-                <h2 class="text-center text-partnert-4 mt-4">Institute of </br> Economic Science </br>IPWIJA</h2>
-            </div>
-            <div class="colomn-img-our topnyaya5" style="margin-top: 2rem">
-                <img src="img/idbi.webp" alt="" width="150px">
-                <h2 class="text-center text-partnert-5 mt-4">Indonesian Business</br>Digital Institute</h2>
-            </div>
-        </div>
-            <div class="inline"></div>
-</div>
-
-<div class="container-fluid container-footer">
-        <div class="footer-top">
-            <div class="footer-address">
-                <img src="{{ asset ('img/footer-logo.png')}}" alt="">
-                <div class="footer-address-content">
-                    <div class="address-office">
-                        <p> <b>Head Office :</b> </p>
-                        <p> Jl. Alternatif Cibubur CBD Cibubur Ruko Fraser Park FR 02 05 Kota Bekasi 17435 Indonesia </p>
-                        <p> Phone: + 62 21 22178061 </p>
-                    </div>
-                    <div class="address-marketing">
-                        <p> <b>Marketing Office :</b> </p>
-                        <p> Jl. TB Simatupang Perumahan <br> Tanjung Barat Indah </p>
-                        <p> Jl. Teratai XIII Blok P No.7 Jakarta Selatan 12530 Indonesia </p>
-                        <p> Phone: + 62 21 22178061 </p>
-                    </div>
-                </div>
-            </div>
-            <div class="footer-map">
-                <h2>Map PT. INSPIRY INDONESIA KONSULTAN</h2>
-                <div class="mapouter">
-                    <div class="gmap_canvas">
-                        <iframe width="500" height="300" id="gmap_canvas" src="https://maps.google.com/maps?q=PT.%20INSPIRY%20INDONESIA%20KONSULTAN&t=&z=13&ie=UTF8&iwloc=&output=embed" frameborder="0" scrolling="no" marginheight="0" marginwidth="0"></iframe>
-                        {{-- <a href="https://123movies-to.org">123movies</a> --}}
-                        <style>.mapouter{margin-left: auto; margin-right: auto;margin-top: 3vh;position:relative;text-align:right;height:300px;width:500px;}</style>
-                        {{-- <a href="https://www.embedgooglemap.net">google maps embed generator</a> --}}
-                        <style>.gmap_canvas {overflow:hidden;background:none!important;height: 110%;width:500px;}</style>
-                    </div>
-                </div>
-            </div>
-        </div>
-        <div class="footer-socmed">
-            <div class="footer-socmed-title">
-            <h2>Follow Us : </h2>
-            </div>
-            <div class="footer-socmed-content">
-                <div class="footer-socmed-btn">
-                    <a href="">
-                        <i class="fa-brands fa-instagram"></i>
-                    </a>
-                </div>
-                <div class="footer-socmed-btn">
-                    <a href="">
-                    <i class="fa-brands fa-linkedin-in"></i>
-                    </a>
-                </div>
-                <div class="footer-socmed-btn">
-                    <a href="">
-                    <i class="fa-brands fa-tiktok"></i>
-                    </a>
-                </div>
-                <div class="footer-socmed-btn">
-                    <a href="">
-                    <i class="fa-brands fa-youtube"></i>
-                    </a>
-                </div>
-            </div>
-        </div>
-</div>
 @endsection

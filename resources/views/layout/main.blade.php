@@ -52,11 +52,16 @@
         </div>
     </div>
 
-    <div class="whatsapp-logo">
+    <div class="back-to-top" id="top" onclick="topFunction()">
+        <i class="fa-solid fa-angle-up"></i>
+    </div>
+
+    {{-- <div class="whatsapp-logo">
         <a href="">
             <i class="fa-brands fa-whatsapp"></i>
         </a>
-    </div>
+    </div> --}}
+    
 
     <nav class="container-fluid navbar navbar-expand-lg bg-dark" id="navbar">
         <div class="container-fluid">
@@ -132,7 +137,7 @@
         </div>
     </nav>
 
-    <header class="v-header container-fluid">
+    <header id="header" class="v-header container-fluid">
         <div class="header-overlay">
             <div class="header-h6">
                 <h6> Management is doing the things right,</br>People is doing the right things. </h6>
@@ -170,8 +175,77 @@
         @yield('content')
     </div>
 
-    <!-- Optional JavaScript; choose one of the two! -->
+    <div class="container-footer">
+        <div class="footer-logo">
+            <img src="/img/logo2.png" alt="">
+        </div>
+        <div class="sign-me-up">
+            <hr>
+            <div class="sign-form">
+                <h2>Sign Me Up</h2>
+                <div class="sign-email-form">
+                    <form action="" method="">
+                        <input type="email" placeholder="Please enter an email here...">
+                        <div class="sign-me-button" type="submit">Sign Me Up</div>
+                    </form>
+                </div>
+                <p>By signing up you agree to our <a href="">Privacy Policy</a></p>
+            </div>
+            <hr>
+        </div>
 
+        <div class="footer-content">
+            <div class="footer-address">
+                <div class="address-content">
+                    <h4>Head Office :</h4>
+                    <p>Jl. Alternatif Cibubur CBD Cibubur Ruko Fraser Park FR 02 05 Kota Bekasi 17435 Indonesia</p>
+                    <p>Phone: + 62 21 22178061</p>
+                </div>
+                <div class="address-content">
+                    <h4>Marketing Office :</h4>
+                    <p>Jl. TB Simatupang Perumahan Tanjung Barat Indah</p>
+                    <p>Jl. Teratai XIII Blok P No.7 Jakarta Selatan 12530
+                        Indonesia</p>
+                    <p>Phone: +62 877 6777 1778</p>
+                </div>
+            </div>
+            <div class="footer-map">
+                
+                <div class="mapouter">
+                    <div class="gmap_canvas">
+                        <iframe width="500" height="300" id="gmap_canvas" src="https://maps.google.com/maps?q=PT.%20INSPIRY%20INDONESIA%20KONSULTAN&t=&z=13&ie=UTF8&iwloc=&output=embed" frameborder="0" scrolling="no" marginheight="0" marginwidth="0"></iframe>
+                        <style>.mapouter{position:relative;text-align:right;height:300px;width:500px;}</style>
+                        <style>.gmap_canvas {overflow:hidden;background:none!important;height:300px;width:500px;}</style>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <div class="footer-socmed">
+            <hr style="border: 1px solid rgb(212, 212, 212)">
+            <div class="footer-socmed-icon">
+                <a href="">
+                    <i class="fa-brands fa-instagram"></i>
+                </a>
+                <a href="">
+                    <i class="fa-brands fa-linkedin-in"></i>
+                </a>
+                <a href="">
+                    <i class="fa-brands fa-tiktok"></i>
+                </a>
+                <a href="">
+                    <i class="fa-brands fa-youtube"></i>
+                </a>
+                <a href="">
+                    <i class="fa-brands fa-whatsapp"></i>
+                </a>
+            </div>
+            <p style="text-align: center; margin-bottom: 0; margin-top:1rem"> © Copyright of PT. Inspiry Indonesia Konsultan</p>
+        </div>
+    </div>
+
+    <!-- Optional JavaScript; choose one of the two! -->
+    
     <!-- Option 1: Bootstrap Bundle with Popper -->
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.1/dist/js/bootstrap.bundle.min.js" integrity="sha384-u1OknCvxWvY5kfmNBILK2hRnQC3Pr17a+RTT6rIHI7NnikvbZlHgTPOOmMi466C8" crossorigin="anonymous"></script>
     
@@ -181,6 +255,32 @@
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/js/bootstrap.min.js" integrity="sha384-QJHtvGhmr9XOIpI6YVutG+2QOK9T+ZnN4kzFN1RtK3zEFEIsxhlmWl5/YESvpZ13" crossorigin="anonymous"></script>
     -->
     <script src="https://cdn.jsdelivr.net/npm/swiper/swiper-bundle.min.js"></script>
+     <!-- Initialize Swiper -->
+    <!-- Initialize Swiper -->
+    <script>
+        var swiper = new Swiper(".mySwiper", {
+          effect: "coverflow",
+          grabCursor: true,
+          centeredSlides: true,
+          slidesPerView: "auto",
+          coverflowEffect: {
+            rotate: 50,
+            stretch: 0,
+            depth: 100,
+            modifier: 1,
+            slideShadows: true,
+          },
+          pagination: {
+            el: ".swiper-pagination",
+            type: "fraction",
+          },
+          navigation: {
+            nextEl: '.swiper-button-next',
+            prevEl: '.swiper-button-prev',
+        },
+        });
+      </script>
+
 
     {{-- AOS animated --}}
     <script>
@@ -249,21 +349,27 @@
         }
     </script>
 
-    <!-- Initialize Swiper -->
     <script>
-        var swiper = new Swiper(".mySwiper", {
-            slidesPerView: 4,
-            spaceBetween: 5,
-            autoplay: {
-            delay: 2500,
-            disableOnInteraction: false,
-        },
-        pagination: {
-            el: ".swiper-pagination",
-            clickable: true,
-        },
-        });
+        // Get the button
+        let backtop = document.getElementById("top");
+
+        // When the user scrolls down 20px from the top of the document, show the button
+        window.onscroll = function() {scrollFunction()};
+
+        function scrollFunction() {
+        if (document.body.scrollTop > 200 || document.documentElement.scrollTop > 200) {
+            backtop.style.display = "block";
+        } else {
+            backtop.style.display = "none";
+        }
+        }
+        // When the user clicks on the button, scroll to the top of the document
+        function topFunction() {
+            document.body.scrollTop = 0;
+            document.documentElement.scrollTop = 0;
+        }
     </script>
+    
 </body>
 </html>
 
