@@ -1021,7 +1021,8 @@ nav.sticky .search input::-webkit-input-placeholder {
     margin-top: 1.5rem;
 }
 .contact-card i{
-    background-color: white;
+    color: #540709;
+    background-color: #e0e0e0;
     font-size: 1.7vw;
     height: 2.7vw;
     width: 2.7vw;
