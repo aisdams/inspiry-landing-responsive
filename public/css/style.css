@@ -593,7 +593,7 @@ nav.sticky .search input::-webkit-input-placeholder {
     height: 70%;
 }
 .container-culture{
-    height: 100vh;
+    min-height: 100vh;
     width: 100%;
 }
 .culture-title h3{
@@ -890,11 +890,19 @@ nav.sticky .search input::-webkit-input-placeholder {
 }
 /* End our partner */
 
+/* !! our location */
+.container-map{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-height: 90vh;
+}
+/* !! end our location */
+
 /* !! footer */
 .container-footer{
-    background-color: rgb(0, 0, 0);
+    background-color: #070707;
     width: 100%;
-    min-height: 90vh;
 }
 .sign-me-up{
     display: flex;
@@ -910,6 +918,16 @@ nav.sticky .search input::-webkit-input-placeholder {
 }
 .sign-form{
     width: 30%;
+    margin-top: auto;
+}
+.sign-form p a{
+    color: #ff0807;
+    text-decoration-color: #ca0e0d;
+    font-weight: 500;
+    cursor: pointer;
+}
+.sign-form p a:hover{
+    color: #b7b7b7;
 }
 .sign-email-form form{
     display: flex;
@@ -945,24 +963,118 @@ nav.sticky .search input::-webkit-input-placeholder {
 .sign-me-button:hover{
     background-color: #590c0a;
 }
+.footer-logo{
+    width: 50%;
+}
+.footer-logo img{
+    width: 75%;
+}
 
+.address-title{
+    width: 50%;
+}
 .footer-content{
     display: flex;
+    justify-content: space-around;
+    margin-top: 4rem;
 }
 .footer-address{
     display: flex;
-    width: 50%;
+    gap: 1rem;
+    margin-top: 1.5rem;
+}
+.address-content{
+    width: 45%;
+}
+.address-content h4{
+    color: #8e0509;
+    font-size: 23.5px;
+    font-weight: 650;
+}
+.address-content p{
+    color: #898989;
+    font-weight: 300;
 }
 
+.container-footer-socmed{
+    background-color: black;
+    min-height: 10vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
 .footer-socmed-icon{
     display: flex;
     justify-content: center;
     gap: 1rem;
 }
+
+.footer-contact h2{
+    margin-bottom: 1rem;
+}
+.contact-card{
+    display: flex;
+    gap: .5rem;
+    margin-top: .5rem;
+}
+.contact-card:nth-child(2){
+    margin-top: 1.5rem;
+}
+.contact-card i{
+    background-color: white;
+    font-size: 1.7vw;
+    height: 2.7vw;
+    width: 2.7vw;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border-radius: 50%;
+}
+.contact-title h5{
+    margin: 0;
+    color: #a0070b;
+    font-weight: 700;
+}
+.contact-content p{
+    margin: 0;
+}
+
+.footer-link{
+    display: flex;
+    align-items: center;
+}
+.link-content{
+    margin-top: .7rem;
+}
+.link-content a, .contact-content a{
+    display: block;
+    text-decoration: none;
+    color: #898989;
+    width: max-content;
+    margin-top: 0.3rem;
+}
+.link-content a:hover, .contact-content a:hover{
+    color: #c8c8c8;
+    text-decoration: underline;
+    text-decoration-color: #810408;
+}
+.address-title h2, .footer-contact h2, .link-title h2{
+    color: #e0e0e0;
+    font-weight: 600;
+    font-size: 30px;
+    letter-spacing: .06rem;
+}
+
+.footer-icon{
+    display: flex;
+    justify-content: space-between;
+    margin-top: 1rem;
+    width: 95%;
+}
 .footer-socmed-icon i, .footer-socmed-icon a{
     color: #e0e0e0;
 }
-.footer-socmed a{
+.footer-icon a{
     cursor: pointer;
     text-decoration: none;
     background-color: #141414;
@@ -974,11 +1086,11 @@ nav.sticky .search input::-webkit-input-placeholder {
     justify-content: center;
     transition: .3s;
 }
-.footer-socmed i{
+.footer-icon i{
     cursor: pointer;
     font-size: 1.7vw;
 }
-.footer-socmed a:hover{
+.footer-icon a:hover{
     background-color: #810305;
     transition: .3s;
 }

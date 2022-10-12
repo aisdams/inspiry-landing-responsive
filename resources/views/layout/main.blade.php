@@ -175,72 +175,111 @@
         @yield('content')
     </div>
 
-    <div class="container-footer">
-        <div class="footer-logo">
-            <img src="/img/logo2.png" alt="">
+    <div class="container-map">         
+        <div class="mapouter">
+            <div class="gmap_canvas">
+                <iframe width="750" height="500" id="gmap_canvas" src="https://maps.google.com/maps?q=PT.%20INSPIRY%20INDONESIA%20KONSULTAN&t=&z=13&ie=UTF8&iwloc=&output=embed" frameborder="0" scrolling="no" marginheight="0" marginwidth="0"></iframe>
+                <style>.mapouter{position:relative;text-align:right;height:500px;width:750px;}</style>
+                <style>.gmap_canvas {overflow:hidden;background:none!important;height:500px;width:750px;}</style>
+            </div>
         </div>
+    </div>
+
+    <div class="container-footer">
         <div class="sign-me-up">
-            <hr>
+            <div class="footer-logo">
+                <img src="/img/logo.png" alt="">
+            </div>
             <div class="sign-form">
-                <h2>Sign Me Up</h2>
+                <h3 style="text-align: center;color: #9b9b9b;font-size: 25px;letter-spacing: .03rem;word-spacing: 0.05rem;
+            ">Create a New Account</h3>
                 <div class="sign-email-form">
                     <form action="" method="">
                         <input type="email" placeholder="Please enter an email here...">
                         <div class="sign-me-button" type="submit">Sign Me Up</div>
                     </form>
                 </div>
-                <p>By signing up you agree to our <a href="">Privacy Policy</a></p>
+                <p style="font-size: 14px; margin-bottom: 0;color: #5a5a5a">By signing up you agree to our <a href="">Privacy Policy</a> and <a href="">Terms & Conditions</a></p>
             </div>
-            <hr>
         </div>
 
         <div class="footer-content">
-            <div class="footer-address">
-                <div class="address-content">
-                    <h4>Head Office :</h4>
-                    <p>Jl. Alternatif Cibubur CBD Cibubur Ruko Fraser Park FR 02 05 Kota Bekasi 17435 Indonesia</p>
-                    <p>Phone: + 62 21 22178061</p>
+            <div class="address-title">
+                <h2>Our Address</h2>
+                    <div class="footer-address">
+                        <div class="address-content">
+                            <h4>Head Office </h4>
+                            <p>Jl. Alternatif Cibubur CBD Cibubur Ruko Fraser Park FR 02 05 Kota Bekasi 17435 Indonesia</p>
+                        </div>
+                        <div class="address-content">
+                            <h4>Marketing Office </h4>
+                            <p>Jl. TB Simatupang Perumahan Tanjung Barat Indah</p>
+                            <p>Jl. Teratai XIII Blok P No.7 Jakarta Selatan 12530
+                                Indonesia</p>
+                        </div>
+                    </div>
+            </div>
+
+            <div class="footer-contact">
+                <h2>Contact Us</h2>
+                <div class="contact-card">
+                    <i class="fa-solid fa-phone"></i>
+                    <div class="contact-title">
+                        <h5>Phone</h5>
+                        <div class="contact-content">
+                            <a href="">+62 21 2217 8061</a>
+                            <a href="">+62 877 6777 1778</a>
+                        </div>
+                    </div>
                 </div>
-                <div class="address-content">
-                    <h4>Marketing Office :</h4>
-                    <p>Jl. TB Simatupang Perumahan Tanjung Barat Indah</p>
-                    <p>Jl. Teratai XIII Blok P No.7 Jakarta Selatan 12530
-                        Indonesia</p>
-                    <p>Phone: +62 877 6777 1778</p>
+                <div class="contact-card">
+                    <i class="fa-solid fa-envelope"></i>
+                    <div class="contact-title">
+                        <h5>Email</h4>
+                        <div class="contact-content">
+                            <a href="">inspiryindonesiakonsultan@gmail.com</a>
+                        </div>
+                    </div>
                 </div>
             </div>
-            <div class="footer-map">
-                
-                <div class="mapouter">
-                    <div class="gmap_canvas">
-                        <iframe width="500" height="300" id="gmap_canvas" src="https://maps.google.com/maps?q=PT.%20INSPIRY%20INDONESIA%20KONSULTAN&t=&z=13&ie=UTF8&iwloc=&output=embed" frameborder="0" scrolling="no" marginheight="0" marginwidth="0"></iframe>
-                        <style>.mapouter{position:relative;text-align:right;height:300px;width:500px;}</style>
-                        <style>.gmap_canvas {overflow:hidden;background:none!important;height:300px;width:500px;}</style>
+
+            <div class="footer-link">
+                <div class="link-title">
+                    <h2>Site link</h2>
+                    <div class="link-content">
+                        <a href="">Home</a>
+                        <a href="">Blog</a>
+                        <a href="">Contact</a>
+                        <a href="">Privacy Policy</a>
+                        <a href="">Terms & Conditions</a>
                     </div>
                 </div>
             </div>
         </div>
 
-        <div class="footer-socmed">
-            <hr style="border: 1px solid rgb(212, 212, 212)">
-            <div class="footer-socmed-icon">
-                <a href="">
-                    <i class="fa-brands fa-instagram"></i>
-                </a>
-                <a href="">
-                    <i class="fa-brands fa-linkedin-in"></i>
-                </a>
-                <a href="">
-                    <i class="fa-brands fa-tiktok"></i>
-                </a>
-                <a href="">
-                    <i class="fa-brands fa-youtube"></i>
-                </a>
-                <a href="">
-                    <i class="fa-brands fa-whatsapp"></i>
-                </a>
-            </div>
-            <p style="text-align: center; margin-bottom: 0; margin-top:1rem"> © Copyright of PT. Inspiry Indonesia Konsultan</p>
+        <hr style="border: 1px solid rgb(212, 212, 212); margin: 0;">
+    </div>
+
+    <div class="container-footer-socmed">
+        <div class="footer-icon">
+            <p style="text-align: center; margin-bottom: 0; color: #d8d8d8; display: flex; align-items: center;"> © Copyright - PT. Inspiry Indonesia Konsultan</p>
+        <div class="footer-socmed-icon">
+            <a href="">
+                <i class="fa-brands fa-instagram"></i>
+            </a>
+            <a href="">
+                <i class="fa-brands fa-linkedin-in"></i>
+            </a>
+            <a href="">
+                <i class="fa-brands fa-tiktok"></i>
+            </a>
+            <a href="">
+                <i class="fa-brands fa-youtube"></i>
+            </a>
+            {{-- <a href="">
+                <i class="fa-brands fa-whatsapp"></i>
+            </a> --}}
+        </div>
         </div>
     </div>
 
