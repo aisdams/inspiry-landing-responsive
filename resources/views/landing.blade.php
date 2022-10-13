@@ -193,7 +193,6 @@
 
 <div class="container-fluid container-culture">
     
-    <div class="img-ilustration"></div>
     <div class="culture">
         <div class="culture-title">
             <h3>OUR CULTURE & SOUL</h3>
@@ -231,133 +230,131 @@
         </div>
     </div>
 
+    <div class="circleproduct"></div>
     <div class="product">
-        <div class="product-header">
-            <div class="product-title">
-                <h3>Our</h3>
-                <h3>Product</h3>
+        <div class="text-all">
+            <div class="textn">Our <div class="lineour" style="width: 150px;height: 1px;background-color: rgb(0, 0, 0); position: absolute;margin-top: -2rem;left: 13rem;"></div><br> <code class="textn1">Product <!-- <div class="line-product"></div>  --></code></div>
+            <p class="text-product">Lorem ipsum dolor, sit amet consectetur adipisicing elit. Natus aut est laboriosam delectus voluptatem quo a magnam obcaecati vel. Ipsam blanditiis pariatur eveniet tempora provident magni quidem, enim id voluptas!</p>
+            <div class="our-product-text">
+                <h1>OUR PRODUCT</h1>
             </div>
-            <hr>
+            
+            <div class="imgblock">
+                <img src="img/inssearch.jpg" alt="">
+            </div>
+
         </div>
 
-        
-    <div class="our-product">
-        <div class="cardn">
-            <img src="img/accepted.jpg" alt="">
-            <h6>CERTIFICATION</h6>
-        </div>
-    
-        <div class="cardn">
-            <img src="img/training.jpg" alt="">
-            <h6>TRAINING PROGRAM</h6>
-        </div>
-
-        <div class="cardn">
-            <img src="img/fda.jpg" alt="">
-            <h6>FDA <br> PROGRAM</h6>
-        </div>
-
-        <div class="cardn">
-            <img src="img/insfenger.png" alt="">
-            <h6>INSFENGER <br> (CONFERENCE ARRANGER)</h6>
-        </div>
-    </div>
-    <div class="our-product-1">
-        <div class="cardn">
-            <img src="img/opspiry.jpg" alt="">
-            <h6>OPSPIRY <br> (OPERATING MANAGEMENT SYSTEM)</h6>
-        </div>
-    
-        <div class="cardn">
-            <img src="img/legspiry.jpg" alt="">
-            <h6>LEGSPIRY <br> (LEGAL CONSULTANT)</h6>
-        </div>
-
-        <div class="cardn">
-            <img src="img/company.jpg" alt="">
-            <h6>COMPANY LICENCE</h6>
-        </div>
-
-        <div class="cardn">
-            <img src="img/imagery.jpg" alt="">
-            <h6>IMAGERY <br> (BRAND BUILDER)</h6>
-        </div>
+        <div class="row" style="display: flex;flex-direction: column;gap: 2rem;"> 
+            <div class="column">
+              <img src="img/accepted.jpg">
+              <img src="img/company.jpg">
+            </div>
+            <div class="column1">
+                <img src="img/opspiry.jpg">
+                <img src="img/legspiry.jpg">
+            </div>
+            
+            <div class="column2">
+                <img src="img/insfenger.png">
+                <img src="img/fda.jpg">
+            </div>
+          </div>
     </div>
 
-    </div>
 </div>
 
-<div class="container-fluid container-solution">
+<div class="container-solution">
     <div class="solution-overlay">
-    <div class="all-solution position-relative">
+        <div class="all-solution">
             <div class="text-solution pt-5" data-aos="fade-up" data-aos-duration="1500">
-                <h1 class="text-white" style="font-size: 67px;font-weight:600;text-shadow:2px 3px #000">OUR</h1>
-                <h1 style="color: red;font-size: 50px;font-weight:600;text-shadow:2px 3px #000;letter-spacing: 5px;margin-top:-1.5rem">SOLUTION</h1>
+                    <h1 class="text-white" style="font-size: 67px;font-weight:600;text-shadow:2px 3px #000">OUR</h1>
+                    <h1 style="color: red;font-size: 50px;font-weight:600;text-shadow:2px 3px #000;letter-spacing: 5px;margin-top:-1.5rem">SOLUTION</h1>
             </div>
             <div class="solution-circle" data-aos="fade-up" data-aos-duration="1500">
-                <div class="circle-1"></div>
-                <div class="circle-1"></div>
-                <div class="circle-1"></div>
+                    <div class="circle-1"></div>
+                    <div class="circle-1"></div>
+                    <div class="circle-1"></div>
             </div>
 
             <div class="content-solution" style="display: flex; gap: 4rem;">
-                <div class="text-solution-1 mt-5 text-white" style="font-size: 17px; text-align: justify; width:80%;" data-aos="fade-up" data-aos-duration="1500" data-aos-delay="500">
-                    <p style="letter-spacing: .2px;">INSPIRY is here to help entrepreneurs, business owners, and company leaders to maximize all business management performance, design and map out the right business strategy, and ultimately be able to improve the company’s financial on an ongoing basis. We provide you with all the answers, and strategies and solutions that can bring your  company and business to grow faster and better, and are fully scalable and controllable.</p>
+                    <div class="text-solution-1 mt-5 text-white" style="font-size: 17px; text-align: justify; width:80%;" data-aos="fade-up" data-aos-duration="1500" data-aos-delay="500">
+                        <p style="letter-spacing: .2px;">INSPIRY is here to help entrepreneurs, business owners, and company leaders to maximize all business management performance, design and map out the right business strategy, and ultimately be able to improve the company’s financial on an ongoing basis. We provide you with all the answers, and strategies and solutions that can bring your  company and business to grow faster and better, and are fully scalable and controllable.</p>
 
-                    <p style="letter-spacing: .2px">With the increase in the company’s internal competence and the ability to manage all company resources accompanied by foresight and speed in responding to the company’s external conditions. Our clients are able to take their company and business to a level that is more advanced than its previous position and excel in business competition. Client companies also have a series of solutions and strategies, especially dealing with recession, crisis and decline successfully</p>
-                </div>
-
-                <div class="btn-contact text-white">
-                    <div class="title-btn" style="padding: 10px 30px;">
-                        <i class="fa-solid fa-phone-volume" style="transform: rotate(-30deg)"></i>
-                        + 62 21 22178061
+                        <p style="letter-spacing: .2px">With the increase in the company’s internal competence and the ability to manage all company resources accompanied by foresight and speed in responding to the company’s external conditions. Our clients are able to take their company and business to a level that is more advanced than its previous position and excel in business competition. Client companies also have a series of solutions and strategies, especially dealing with recession, crisis and decline successfully</p>
                     </div>
-                </div>
+
+                    <div class="btn-contact text-white">
+                        <div class="title-btn" style="padding: 10px 30px;">
+                            <i class="fa-solid fa-phone-volume" style="transform: rotate(-30deg)"></i>
+                            + 62 21 22178061
+                        </div>
+                    </div>
             </div>
+            
+
+            <div class="our-client text-white text-center" style="display: flex; gap:2rem ;justify-content: center;align-items: center;background:rgba(0, 0, 0, 0.5);height:50vh;margin-left: -3rem;margin-top:5rem">
+                {{-- <div class="column" style="width: 33%;height:220px;background:rgba(255, 255, 255, 0.137);margin-left: 4.5rem;margin-top:2rem">
+                    <div class="textnya" style="margin-top:4rem">
+                        <h1 id='0101'>150</h1><h2 style="position: relative;top:-4rem; font-size:36px;left:2.9rem">+</h2>
+                        <p style="position:relative; top: -3rem">OUR CLIENT</p>
+                    </div>
+                    <div class="column-line" style="position: relative; top:-3.2rem"></div>
+                </div> --}}
+
+                <div class="column" style="width: 30%;height:220px;background:rgba(255, 255, 255, 0.137);margin-left: margin-top:2rem">
+                    <div class="textnya" style="margin-top:4rem">
+                        <h1 id='0101'>150</h1>
+                        <p>OUR CLIENT</p>
+                    </div>
+                    <div class="column-line"></div>
+                </div>
+                <div class="column column-topnya" style="width: 30%;height:220px;background:rgba(255, 255, 255, 0.137);margin-left: margin-top:2rem">
+                    <div class="textnya" style="margin-top:4rem">
+                        <h1 id='0102'>6</h1>
+                        <p>PARTNERSHIP</p>
+                    </div>
+                    <div class="column-line"></div>
+                </div>
+                <div class="column column-topnya" style="width: 30%;height:220px;background:rgba(255, 255, 255, 0.137);margin-left: margin-top:2rem">
+                    <div class="textnya" style="margin-top:4rem">
+                        <h1 id='0103'>20</h1>
+                        <p>RECOMMENDATION LETTER</p>
+                    </div>
+                    <div class="column-line"></div>
+                </div>
         
-
-        <div class="our-client text-white text-center" style="display: flex; gap:2rem ;justify-content: center;align-items: center;background:rgba(0, 0, 0, 0.5);height:50vh;margin-left: -3rem;margin-top:5rem">
-            {{-- <div class="column" style="width: 33%;height:220px;background:rgba(255, 255, 255, 0.137);margin-left: 4.5rem;margin-top:2rem">
-                <div class="textnya" style="margin-top:4rem">
-                    <h1 id='0101'>150</h1><h2 style="position: relative;top:-4rem; font-size:36px;left:2.9rem">+</h2>
-                    <p style="position:relative; top: -3rem">OUR CLIENT</p>
-                </div>
-                <div class="column-line" style="position: relative; top:-3.2rem"></div>
-            </div> --}}
-
-            <div class="column" style="width: 30%;height:220px;background:rgba(255, 255, 255, 0.137);margin-left: margin-top:2rem">
-                <div class="textnya" style="margin-top:4rem">
-                    <h1 id='0101'>150</h1>
-                    <p>OUR CLIENT</p>
-                </div>
-                <div class="column-line"></div>
+                {{-- <div class="column" style="width: 33%;height:220px;background:rgba(255, 255, 255, 0.137);margin-left: margin-top:2rem">
+                    <div class="textnya" style="margin-top:4rem">
+                        <h1 id='0103'>20 +</h1><h2 style="position: relative;top:-4rem; font-size:36px;left:2.9rem">+</h2>
+                        <p style="position:relative; top: -3rem">RECOMMENDATION LETTER</p>
+                    </div>
+                    <div class="column-line" style="position: relative; top:-3.2rem"></div>
+                </div> --}}
             </div>
-            <div class="column column-topnya" style="width: 30%;height:220px;background:rgba(255, 255, 255, 0.137);margin-left: margin-top:2rem">
-                <div class="textnya" style="margin-top:4rem">
-                    <h1 id='0102'>6</h1>
-                    <p>PARTNERSHIP</p>
-                </div>
-                <div class="column-line"></div>
-            </div>
-            <div class="column column-topnya" style="width: 30%;height:220px;background:rgba(255, 255, 255, 0.137);margin-left: margin-top:2rem">
-                <div class="textnya" style="margin-top:4rem">
-                    <h1 id='0103'>20</h1>
-                    <p>RECOMMENDATION LETTER</p>
-                </div>
-                <div class="column-line"></div>
-            </div>
-    
-            {{-- <div class="column" style="width: 33%;height:220px;background:rgba(255, 255, 255, 0.137);margin-left: margin-top:2rem">
-                <div class="textnya" style="margin-top:4rem">
-                    <h1 id='0103'>20 +</h1><h2 style="position: relative;top:-4rem; font-size:36px;left:2.9rem">+</h2>
-                    <p style="position:relative; top: -3rem">RECOMMENDATION LETTER</p>
-                </div>
-                <div class="column-line" style="position: relative; top:-3.2rem"></div>
-            </div> --}}
         </div>
     </div>
 </div>
 
+
 {{-- <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1440 320"><path fill=" rgba(204,204,0, 0.1)" fill-opacity="1" d="M0,96L48,128C96,160,192,224,288,218.7C384,213,480,139,576,128C672,117,768,171,864,176C960,181,1056,139,1152,138.7C1248,139,1344,181,1392,202.7L1440,224L1440,0L1392,0C1344,0,1248,0,1152,0C1056,0,960,0,864,0C768,0,672,0,576,0C480,0,384,0,288,0C192,0,96,0,48,0L0,0Z"></path></svg> --}}
+
+<div class="container-map">
+    <div class="map-title">
+        <h1>Our Location</h1>
+        <hr style="border: 1px solid black;opacity: .50;height: 60px;">
+        <div class="map-text">
+            <h3>PT. Inspiry Indonesia Konsultan</h3>
+            <p>For larger map <a href="https://goo.gl/maps/Kx6EuWQSxJDcKVQy8" target="_blank" style="cursor: pointer">View Here</a></p>
+        </div>
+    </div>
+    <div class="mapouter">
+        <div class="gmap_canvas">
+            <iframe width="1200" height="550" id="gmap_canvas" src="https://maps.google.com/maps?q=PT.%20INSPIRY%20INDONESIA%20KONSULTAN&t=&z=13&ie=UTF8&iwloc=&output=embed" frameborder="0" scrolling="no" marginheight="0" marginwidth="0"></iframe>
+            <style>.mapouter{position:relative;text-align:right;height:100%;width:100%;}</style>
+            <style>.gmap_canvas {overflow:hidden;background:none!important;height:100%;width:100%;display: flex; justify-content: center;align-items: center}</style>
+        </div>
+    </div>
+</div>
 
 @endsection

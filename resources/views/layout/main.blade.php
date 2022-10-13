@@ -175,16 +175,6 @@
         @yield('content')
     </div>
 
-    <div class="container-map">         
-        <div class="mapouter">
-            <div class="gmap_canvas">
-                <iframe width="750" height="500" id="gmap_canvas" src="https://maps.google.com/maps?q=PT.%20INSPIRY%20INDONESIA%20KONSULTAN&t=&z=13&ie=UTF8&iwloc=&output=embed" frameborder="0" scrolling="no" marginheight="0" marginwidth="0"></iframe>
-                <style>.mapouter{position:relative;text-align:right;height:500px;width:750px;}</style>
-                <style>.gmap_canvas {overflow:hidden;background:none!important;height:500px;width:750px;}</style>
-            </div>
-        </div>
-    </div>
-
     <div class="container-footer">
         <div class="sign-me-up">
             <div class="footer-logo">
@@ -211,6 +201,7 @@
                             <h4>Head Office </h4>
                             <p>Jl. Alternatif Cibubur CBD Cibubur Ruko Fraser Park FR 02 05 Kota Bekasi 17435 Indonesia</p>
                         </div>
+                        <hr style="color: white;border: 1px solid white;">
                         <div class="address-content">
                             <h4>Marketing Office </h4>
                             <p>Jl. TB Simatupang Perumahan Tanjung Barat Indah</p>
@@ -227,8 +218,8 @@
                     <div class="contact-title">
                         <h5>Phone</h5>
                         <div class="contact-content">
-                            <a href="">+62 21 2217 8061</a>
-                            <a href="">+62 877 6777 1778</a>
+                            <a href="https://wa.me/622122178061" target="_blank">+62 21 2217 8061</a>
+                            <a href="https://wa.me/628776777778" target="_blank">+62 877 6777 1778</a>
                         </div>
                     </div>
                 </div>
@@ -257,7 +248,7 @@
             </div>
         </div>
 
-        <hr style="border: 1px solid rgb(212, 212, 212); margin: 0;">
+        <hr style="border: 1px solid rgb(212, 212, 212); margin: 0;margin-top: .5vh;">
     </div>
 
     <div class="container-footer-socmed">
